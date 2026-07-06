@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ode SYSTEM "content.dtd">
+<ode xmlns="http://www.intef.es/xsd/ode" version="2.0">
+<userPreferences>
+  <userPreference>
+    <key>theme</key>
+    <value>majuelo</value>
+  </userPreference>
+</userPreferences>
+<odeResources>
+  <odeResource>
+    <key>odeId</key>
+    <value>20260706120000WEB02SDA</value>
+  </odeResource>
+  <odeResource>
+    <key>odeVersionId</key>
+    <value>20260706120000WEB02VER</value>
+  </odeResource>
+  <odeResource>
+    <key>exe_version</key>
+    <value>4.0.1</value>
+  </odeResource>
+</odeResources>
+<odeProperties>
+  <odeProperty>
+    <key>pp_title</key>
+    <value>Desarrollo Web</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_author</key>
+    <value>Departamento de Tecnología — IES El Majuelo</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_description</key>
+    <value>Unidad de iniciación al desarrollo web (HTML, CSS y animación) para 2.º de ESO. SdA «Tu rincón en la red».</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_lang</key>
+    <value>es</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_license</key>
+    <value>creative commons: attribution - share alike</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_theme</key>
+    <value>majuelo</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_exelearning_version</key>
+    <value>v4.0.1</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_modified</key>
+    <value>1783347117017</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addExeLink</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addPagination</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addSearchBox</key>
+    <value>false</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addAccessibilityToolbar</key>
+    <value>false</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addMathJax</key>
+    <value>false</value>
+  </odeProperty>
+  <odeProperty>
+    <key>exportSource</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_globalFont</key>
+    <value>default</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_screenshot</key>
+    <value>data:image/png;base64,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</value>
+  </odeProperty>
+</odeProperties>
+<odeNavStructures>
+<odeNavStructure>
+  <odePageId>page-web02-00</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>Desarrollo Web · Inicio</pageName>
+  <odeNavStructureOrder>0</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Desarrollo Web · Inicio</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Tu rincón en la red</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-00</odePageId>
+      <odeBlockId>block-web02-00</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-00</odePageId>
+          <odeBlockId>block-web02-00</odeBlockId>
+          <odeIdeviceId>idev-web02-00</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Tu rincón en la red</p>
+  <p>En esta unidad vas a construir <strong>tu primera página web</strong>: una página personal sobre un tema que te guste (tu deporte, tu grupo de música, tus videojuegos, tu pueblo…). La harás con los mismos lenguajes con los que están hechas todas las páginas que visitas a diario, y aprenderás a ponerle texto, imágenes con licencia, estilo y hasta una animación.</p>
+</div>
+
+<h2>¿Qué vas a conseguir?</h2>
+<p>Al terminar tendrás una <strong>página web personal</strong> hecha por ti, con:</p>
+<ul>
+  <li>Una <strong>estructura</strong> correcta en HTML (títulos, párrafos, listas, enlaces).</li>
+  <li>Al menos una <strong>imagen con licencia libre</strong>, correctamente atribuida.</li>
+  <li>Un <strong>estilo</strong> propio con CSS (colores, tipos de letra, disposición).</li>
+  <li>Al menos una <strong>animación</strong> web.</li>
+</ul>
+<p>La entregarás en <strong>Google Classroom</strong> y la enseñarás en una presentación breve a la clase.</p>
+
+<h2>El plan, sesión a sesión</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Sesión</th><th>Aprenderás a…</th></tr></thead>
+  <tbody>
+    <tr><td>S1</td><td>Entender cómo funciona la web (navegador y servidor) y mirar por dentro una página real.</td></tr>
+    <tr><td>S2</td><td>Conocer los lenguajes de la web y escribir tu primera página HTML.</td></tr>
+    <tr><td>S3</td><td>Añadir texto, listas y enlaces a tu página.</td></tr>
+    <tr><td>S4</td><td>Insertar imágenes con licencia libre y atribuirlas bien.</td></tr>
+    <tr><td>S5</td><td>Dar estilo a tu página con CSS.</td></tr>
+    <tr><td>S6</td><td>Incorporar una animación web.</td></tr>
+    <tr><td>S7</td><td>Montar tu página final, revisarla con la checklist y entregarla.</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Con qué herramienta vamos a trabajar?</h2>
+<p>Para escribir el código de tu página tienes <strong>dos opciones</strong>. Las dos son gratuitas y no necesitan instalar nada.</p>
+
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Opción A · Editor online (recomendada, sirve también en casa)</p>
+  <p>Usaremos <strong>HTML Code Runner</strong>, un editor de páginas web que funciona dentro del navegador, sin cuenta y sin instalar nada. Te sirve tanto en el ordenador del aula como en casa si necesitas recuperar una sesión.</p>
+  <p>Entra aquí: <a href="https://htmlcoderunner.com/es/" target="_blank" rel="noopener">htmlcoderunner.com/es</a></p>
+  <p><strong>Cómo se usa (3 pasos):</strong></p>
+  <ol>
+    <li><strong>Escribe</strong> tu código HTML en el recuadro de la izquierda.</li>
+    <li>Pulsa <strong>«Ejecutar» (Run)</strong> para ver el resultado al instante a la derecha.</li>
+    <li>Cuando termines, pulsa <strong>«Descargar» (Download)</strong>: se guardará un archivo <code>.html</code> en tu carpeta de descargas. Ese es el archivo que subirás a Google Classroom.</li>
+  </ol>
+  <p><strong>Consejo:</strong> el editor <em>no guarda tu trabajo solo</em>. Descarga tu archivo antes de cerrar la pestaña, o copia el código en un sitio seguro.</p>
+</div>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Opción B · Editor «Pluma» del aula</p>
+  <p>En los ordenadores Linux del centro tienes el editor de texto <strong>Pluma</strong>. Escribe el código, guarda el archivo con el menú <em>Archivo → Guardar</em> y ponle un nombre que termine en <code>.html</code> (por ejemplo <code>mi-pagina.html</code>). Luego haz doble clic en el archivo para abrirlo en el navegador y ver cómo queda. Cada vez que cambies el código, guarda y pulsa <strong>F5</strong> en el navegador para actualizar.</p>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Cómo entregar tu trabajo</p>
+  <p>Todas las tareas de esta unidad se entregan en <strong>Google Classroom</strong>, en la tarea que te indique el profesor. Salvo que se diga otra cosa, subirás el archivo <code>.html</code> que hayas creado (o el que te descargues del editor online).</p>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-web02-01</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>S1 · ¿Cómo funciona la web?</pageName>
+  <odeNavStructureOrder>1</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S1 · ¿Cómo funciona la web?</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S1 · ¿Cómo funciona la web?</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-01</odePageId>
+      <odeBlockId>block-web02-01</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-01</odePageId>
+          <odeBlockId>block-web02-01</odeBlockId>
+          <odeIdeviceId>idev-web02-01</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">¿Qué pasa cuando escribes una dirección?</p>
+  <p>Cuando escribes una dirección como <code>www.wikipedia.org</code> en el navegador y pulsas Intro, ocurre algo parecido a pedir un libro en una biblioteca enorme: tu ordenador <strong>pide</strong> la página y otro ordenador, muy lejos, se la <strong>envía</strong>.</p>
+</div>
+
+<h2>Los dos protagonistas: navegador y servidor</h2>
+<p>Para que veas una página web hacen falta dos ordenadores trabajando juntos:</p>
+<ul>
+  <li>El <strong>navegador</strong> (Firefox, Chrome…) es el programa de <em>tu</em> ordenador. Pide las páginas y las muestra en pantalla.</li>
+  <li>El <strong>servidor web</strong> es un ordenador especial que está encendido siempre (24 horas, todos los días) y guarda las páginas. Cuando el navegador se las pide, se las manda.</li>
+</ul>
+<p>Esa conversación entre navegador y servidor sigue unas reglas llamadas <strong>HTTP</strong> (o <strong>HTTPS</strong>, la versión segura). Por eso las direcciones empiezan por <code>https://</code>.</p>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">¿Por qué un servidor y no el ordenador de quien creó la web?</p>
+  <p>Porque a una página famosa la visitan miles de personas a la vez. Un servidor está preparado para atender muchísimas peticiones sin apagarse. Las webs muy visitadas usan además <em>varios</em> servidores que se reparten el trabajo.</p>
+</div>
+
+<h2>Las partes de una dirección (URL)</h2>
+<p>Cada página tiene su propia dirección, llamada <strong>URL</strong>. Fíjate en sus partes con este ejemplo:</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Ejemplo: https://es.wikipedia.org/wiki/Internet</p>
+  <ul>
+    <li><code>https</code> → el <strong>protocolo</strong>: las reglas para pedir la página.</li>
+    <li><code>es.wikipedia.org</code> → el <strong>dominio</strong>: el nombre del sitio donde está guardada.</li>
+    <li><code>/wiki/Internet</code> → la <strong>ruta</strong>: la página concreta dentro de ese sitio.</li>
+  </ul>
+</div>
+
+<h2>Mira una página por dentro</h2>
+<p>Todas las páginas están escritas con un lenguaje llamado <strong>HTML</strong> (lo aprenderás en la próxima sesión). Puedes verlo tú mismo:</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Inspeccionar una página real</p>
+  <ol>
+    <li>Abre en el navegador una página que te guste (por ejemplo, la Wikipedia).</li>
+    <li>Haz <strong>clic derecho</strong> sobre cualquier parte de la página.</li>
+    <li>Elige <strong>«Inspeccionar»</strong> (o pulsa la tecla <strong>F12</strong>).</li>
+    <li>Se abrirá un panel con el <strong>código HTML</strong> de la página. Pasa el ratón por encima de las líneas y verás cómo se iluminan las partes de la página.</li>
+  </ol>
+  <p>No te asustes por la cantidad de código: ¡todas las webs se construyen con las mismas piezas que vas a aprender aquí!</p>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S1 · Cómo funciona la web</p>
+  <p>Responde en el documento de la tarea de Google Classroom:</p>
+  <ol>
+    <li>¿Qué diferencia hay entre un <strong>navegador</strong> y un <strong>servidor</strong> web?</li>
+    <li>¿Por qué las páginas se guardan en servidores y no en el ordenador de casa de quien las crea?</li>
+    <li>Copia la URL de una página que uses mucho e identifica sus partes: <em>protocolo</em>, <em>dominio</em> y <em>ruta</em>.</li>
+    <li><strong>Inspecciona</strong> una página real (clic derecho → Inspeccionar). Haz una captura del panel de código y pégala en tu documento. Escribe una frase con lo que te haya llamado la atención.</li>
+  </ol>
+  <div class="bloque bloque-dua">
+    <p class="bloque-titulo">Ampliación (opcional)</p>
+    <p>Busca qué significan las siglas <strong>HTTP</strong> y <strong>URL</strong>, y averigua otro protocolo distinto de <code>http</code> (pista: el que se usa para enviar archivos empieza por «F»).</p>
+  </div>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-web02-02</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>S2 · La estructura de una página</pageName>
+  <odeNavStructureOrder>2</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S2 · La estructura de una página</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S2 · La estructura de una página</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-02</odePageId>
+      <odeBlockId>block-web02-02</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-02</odePageId>
+          <odeBlockId>block-web02-02</odeBlockId>
+          <odeIdeviceId>idev-web02-02</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Los tres lenguajes de la web</p>
+  <p>Una página web se construye combinando <strong>tres lenguajes</strong>, y cada uno tiene un trabajo distinto. Piensa en construir una casa:</p>
+  <ul>
+    <li><strong>HTML</strong> → la <em>estructura</em> (las paredes, las habitaciones): pone el contenido y lo organiza en títulos, párrafos, listas, imágenes…</li>
+    <li><strong>CSS</strong> → el <em>estilo</em> (la pintura, la decoración): colores, tipos de letra, tamaños, dónde va cada cosa.</li>
+    <li><strong>JavaScript</strong> → el <em>comportamiento</em> (los mecanismos): hace la página interactiva (botones que reaccionan, juegos…).</li>
+  </ul>
+  <p>En esta unidad trabajaremos sobre todo con <strong>HTML</strong> y <strong>CSS</strong>.</p>
+</div>
+
+<h2>¿Qué es una etiqueta HTML?</h2>
+<p>HTML organiza el contenido con <strong>etiquetas</strong>. Una etiqueta es una palabra entre los símbolos <code>&lt;</code> y <code>&gt;</code>. Casi todas van <strong>por parejas</strong>: una de apertura y otra de cierre (la de cierre lleva una barra <code>/</code>).</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Anatomía de un elemento</p>
+  <pre><code>&lt;p&gt;Esto es un párrafo.&lt;/p&gt;</code></pre>
+  <ul>
+    <li><code>&lt;p&gt;</code> → etiqueta de <strong>apertura</strong> (aquí empieza el párrafo).</li>
+    <li><code>Esto es un párrafo.</code> → el <strong>contenido</strong>.</li>
+    <li><code>&lt;/p&gt;</code> → etiqueta de <strong>cierre</strong> (aquí termina).</li>
+  </ul>
+</div>
+
+<h2>La estructura mínima de una página</h2>
+<p>Toda página web parte del mismo <strong>esqueleto</strong>. Cópialo tal cual: será el punto de partida de todo lo que hagas.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Plantilla mínima (cópiala)</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Mi primera página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;¡Hola! Esta es mi página&lt;/h1&gt;
+    &lt;p&gt;Y este es mi primer párrafo.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+<p>¿Qué es cada parte?</p>
+<table class="tabla-datos">
+  <thead><tr><th>Parte</th><th>Para qué sirve</th></tr></thead>
+  <tbody>
+    <tr><td><code>&lt;!DOCTYPE html&gt;</code></td><td>Le dice al navegador que es una página HTML moderna. Va siempre la primera.</td></tr>
+    <tr><td><code>&lt;html&gt;</code></td><td>Envuelve <em>toda</em> la página. El atributo <code>lang="es"</code> indica que está en español.</td></tr>
+    <tr><td><code>&lt;head&gt;</code></td><td>La «ficha técnica»: información que <em>no</em> se ve en la página.</td></tr>
+    <tr><td><code>&lt;meta charset="utf-8"&gt;</code></td><td>Permite que se vean bien las tildes y la ñ. ¡Muy importante en español!</td></tr>
+    <tr><td><code>&lt;title&gt;</code></td><td>El título que aparece en la pestaña del navegador.</td></tr>
+    <tr><td><code>&lt;body&gt;</code></td><td>El «cuerpo»: aquí va <strong>todo lo que se ve</strong> en la página.</td></tr>
+  </tbody>
+</table>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Regla de oro: abrir y cerrar en orden</p>
+  <p>Las etiquetas deben cerrarse en el orden inverso al que se abren, como cajas dentro de cajas. Fíjate en la sangría (los espacios): ayudan a ver qué va dentro de qué.</p>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S2 · Mi primera página HTML</p>
+  <ol>
+    <li>Abre el editor (HTML Code Runner o Pluma) y <strong>copia la plantilla mínima</strong> de arriba.</li>
+    <li>Cambia el <code>&lt;title&gt;</code> por el título de tu página (por ejemplo, «La web de Marta»).</li>
+    <li>Cambia el texto del <code>&lt;h1&gt;</code> y del <code>&lt;p&gt;</code> para presentarte y decir de qué tratará tu página.</li>
+    <li>Comprueba cómo queda (Ejecutar, o guardar y F5) y <strong>entrega el archivo <code>.html</code></strong> en Google Classroom.</li>
+  </ol>
+  <div class="bloque bloque-dua">
+    <p class="bloque-titulo">Ampliación (opcional)</p>
+    <p>Añade un segundo párrafo y un segundo título con la etiqueta <code>&lt;h2&gt;</code>. ¿Qué diferencia notas entre <code>&lt;h1&gt;</code> y <code>&lt;h2&gt;</code>?</p>
+  </div>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-web02-03</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>S3 · HTML: texto, listas y enlaces</pageName>
+  <odeNavStructureOrder>3</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S3 · HTML: texto, listas y enlaces</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S3 · HTML: texto, listas y enlaces</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-03</odePageId>
+      <odeBlockId>block-web02-03</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-03</odePageId>
+          <odeBlockId>block-web02-03</odeBlockId>
+          <odeIdeviceId>idev-web02-03</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Dar forma al contenido</p>
+  <p>Ya tienes el esqueleto. Ahora vas a rellenar el <code>&lt;body&gt;</code> con contenido de verdad: <strong>títulos, párrafos, listas y enlaces</strong>. Estas son las etiquetas que más vas a usar.</p>
+</div>
+
+<h2>Títulos y párrafos</h2>
+<p>Hay seis niveles de título, de <code>&lt;h1&gt;</code> (el más grande e importante) a <code>&lt;h6&gt;</code>. Los párrafos van en <code>&lt;p&gt;</code>.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Ejemplo (cópialo y pruébalo)</p>
+  <pre><code>&lt;h1&gt;Mis videojuegos favoritos&lt;/h1&gt;
+&lt;h2&gt;Juegos de aventuras&lt;/h2&gt;
+&lt;p&gt;Estos son los que más me gustan por su historia.&lt;/p&gt;</code></pre>
+</div>
+
+<h2>Poner el texto en negrita o cursiva</h2>
+<p>Dentro de un párrafo puedes resaltar palabras:</p>
+<div class="bloque bloque-resuelto">
+  <pre><code>&lt;p&gt;Mi juego favorito es &lt;strong&gt;muy divertido&lt;/strong&gt;
+y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
+  <ul>
+    <li><code>&lt;strong&gt;</code> → <strong>negrita</strong> (algo importante).</li>
+    <li><code>&lt;em&gt;</code> → <em>cursiva</em> (algo con énfasis).</li>
+  </ul>
+</div>
+
+<h2>Listas</h2>
+<p>Hay dos tipos de lista. Cada elemento va dentro de una etiqueta <code>&lt;li&gt;</code>.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Lista desordenada (con puntos) y ordenada (con números)</p>
+  <pre><code>&lt;ul&gt;
+  &lt;li&gt;Fresas&lt;/li&gt;
+  &lt;li&gt;Plátanos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Encender el ordenador&lt;/li&gt;
+  &lt;li&gt;Abrir el navegador&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+  <ul>
+    <li><code>&lt;ul&gt;</code> → lista <strong>sin orden</strong> (aparece con puntos).</li>
+    <li><code>&lt;ol&gt;</code> → lista <strong>ordenada</strong> (aparece con números).</li>
+  </ul>
+</div>
+
+<h2>Enlaces</h2>
+<p>Los enlaces son lo que convierte la web en «la web»: te llevan de una página a otra. Se hacen con la etiqueta <code>&lt;a&gt;</code> y su atributo <code>href</code> (la dirección de destino).</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Un enlace que abre en una pestaña nueva</p>
+  <pre><code>&lt;a href="https://es.wikipedia.org" target="_blank" rel="noopener"&gt;Ir a la Wikipedia&lt;/a&gt;</code></pre>
+  <ul>
+    <li><code>href="..."</code> → la dirección a la que lleva el enlace.</li>
+    <li><code>target="_blank"</code> → abre el enlace en una <strong>pestaña nueva</strong>, sin cerrar tu página.</li>
+    <li><code>rel="noopener"</code> → acompaña siempre a <code>target="_blank"</code>: es una medida de seguridad.</li>
+  </ul>
+</div>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Línea de separación y salto de línea</p>
+  <p>Dos etiquetas útiles que <strong>no se cierran</strong>: <code>&lt;hr&gt;</code> dibuja una línea horizontal para separar secciones, y <code>&lt;br&gt;</code> hace un salto de línea dentro de un párrafo.</p>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S3 · Mi página con contenido</p>
+  <p>Partiendo de tu página de la S2, añade dentro del <code>&lt;body&gt;</code>:</p>
+  <ol>
+    <li>Un título <code>&lt;h1&gt;</code> con el tema de tu página y, al menos, un <code>&lt;h2&gt;</code> de subtítulo.</li>
+    <li>Dos <strong>párrafos</strong> que expliquen tu tema, con alguna palabra en <code>&lt;strong&gt;</code> o <code>&lt;em&gt;</code>.</li>
+    <li>Una <strong>lista</strong> (ordenada o desordenada) con al menos 3 elementos.</li>
+    <li>Un <strong>enlace</strong> a una página relacionada con tu tema, que abra en pestaña nueva (<code>target="_blank" rel="noopener"</code>).</li>
+  </ol>
+  <p>Entrega el archivo <code>.html</code> en Google Classroom.</p>
+  <div class="bloque bloque-dua">
+    <p class="bloque-titulo">Ampliación (opcional)</p>
+    <p>Haz una <strong>lista dentro de otra lista</strong> (por ejemplo, «juegos» y, dentro de cada juego, sus personajes). Usa también una línea <code>&lt;hr&gt;</code> para separar dos secciones.</p>
+  </div>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-web02-04</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>S4 · Imágenes con licencia</pageName>
+  <odeNavStructureOrder>4</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S4 · Imágenes con licencia</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S4 · Imágenes con licencia</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-04</odePageId>
+      <odeBlockId>block-web02-04</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-04</odePageId>
+          <odeBlockId>block-web02-04</odeBlockId>
+          <odeIdeviceId>idev-web02-04</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Imágenes… pero con cabeza</p>
+  <p>Una página con imágenes entra mucho mejor por los ojos. Pero <strong>no se puede usar cualquier imagen de internet</strong>: la mayoría tienen dueño y usarlas sin permiso está mal (y puede ser ilegal). En esta sesión aprenderás a poner imágenes <em>y</em> a hacerlo bien.</p>
+</div>
+
+<h2>Insertar una imagen</h2>
+<p>Se usa la etiqueta <code>&lt;img&gt;</code>, que <strong>no se cierra</strong>. Tiene dos atributos importantes:</p>
+<div class="bloque bloque-resuelto">
+  <pre><code>&lt;img src="https://.../foto.jpg" alt="Un balón de baloncesto"&gt;</code></pre>
+  <ul>
+    <li><code>src="..."</code> → la <strong>dirección</strong> de la imagen (de dónde se coge).</li>
+    <li><code>alt="..."</code> → un <strong>texto que describe</strong> la imagen. Lo leen las personas con problemas de visión y aparece si la imagen no carga. Ponlo siempre.</li>
+  </ul>
+  <p>Puedes controlar el tamaño con <code>width</code> (ancho en píxeles): <code>&lt;img src="..." alt="..." width="300"&gt;</code></p>
+</div>
+
+<h2>¿De dónde saco imágenes que SÍ puedo usar?</h2>
+<p>De los <strong>buscadores de imágenes libres</strong>. Ahí las imágenes tienen licencias que permiten reutilizarlas. Dos muy buenos y sin necesidad de cuenta:</p>
+<ul>
+  <li><a href="https://openverse.org/es" target="_blank" rel="noopener">Openverse</a> → buscador de imágenes con licencia Creative Commons.</li>
+  <li><a href="https://pixabay.com/es/" target="_blank" rel="noopener">Pixabay</a> → imágenes de uso libre.</li>
+</ul>
+
+<div class="bloque bloque-formula">
+  <p class="bloque-titulo">¿Qué es una licencia Creative Commons (CC)?</p>
+  <p>Es un permiso que el autor da para que otras personas usen su obra, normalmente con una condición: <strong>citar quién la hizo</strong>. Es la forma legal y justa de compartir. Al usar una imagen CC, tú también debes decir de quién es: eso se llama <strong>atribución</strong>.</p>
+</div>
+
+<h2>Cómo atribuir una imagen correctamente</h2>
+<p>Debajo de la imagen (o al final de la página) escribe una línea con estos cuatro datos: <strong>título, autor, licencia y enlace</strong>.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Ejemplo de atribución (cópialo y adáptalo)</p>
+  <pre><code>&lt;img src="https://.../gato.jpg" alt="Un gato naranja" width="300"&gt;
+&lt;p&gt;
+  «Gato naranja» de Ana Pérez, licencia CC BY,
+  &lt;a href="https://openverse.org/..." target="_blank" rel="noopener"&gt;ver original&lt;/a&gt;.
+&lt;/p&gt;</code></pre>
+</div>
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Truco</p>
+  <p>En Openverse, cuando eliges una imagen, la propia web te da la atribución ya escrita para copiar. ¡Aprovéchalo!</p>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S4 · Imágenes con licencia</p>
+  <p>En tu página, añade:</p>
+  <ol>
+    <li>Al menos <strong>una imagen</strong> relacionada con tu tema, buscada en Openverse o Pixabay, con su <code>alt</code> bien escrito.</li>
+    <li>Su <strong>atribución</strong> debajo: título, autor, licencia y enlace al original.</li>
+  </ol>
+  <p>Entrega el archivo <code>.html</code> en Google Classroom.</p>
+  <div class="bloque bloque-nota">
+    <p class="bloque-titulo">Ojo, esto se evalúa</p>
+    <p>Usar imágenes libres y atribuirlas bien <strong>puntúa</strong> en esta unidad. Una imagen sin atribución cuenta como no válida.</p>
+  </div>
+  <div class="bloque bloque-dua">
+    <p class="bloque-titulo">Ampliación (opcional)</p>
+    <p>Añade una segunda imagen y averigua qué significan las siglas de las licencias: <strong>CC BY</strong>, <strong>CC BY-SA</strong> y <strong>CC0</strong>. ¿En qué se diferencian?</p>
+  </div>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-web02-05</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>S5 · CSS: dando estilo</pageName>
+  <odeNavStructureOrder>5</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S5 · CSS: dando estilo</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S5 · CSS: dando estilo</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-05</odePageId>
+      <odeBlockId>block-web02-05</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-05</odePageId>
+          <odeBlockId>block-web02-05</odeBlockId>
+          <odeIdeviceId>idev-web02-05</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Ahora, el estilo</p>
+  <p>Tu página ya tiene contenido, pero se ve «sosa»: letras negras sobre fondo blanco. Con <strong>CSS</strong> vas a darle color, cambiar los tipos de letra y decidir cómo se coloca todo. Recuerda: HTML pone <em>qué</em> hay; CSS decide <em>cómo se ve</em>.</p>
+</div>
+
+<h2>¿Dónde se escribe el CSS?</h2>
+<p>La forma más sencilla para empezar es poner una <strong>hoja de estilos</strong> dentro del <code>&lt;head&gt;</code>, usando la etiqueta <code>&lt;style&gt;</code>. Así todo tu trabajo queda en <strong>un solo archivo</strong>.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Dónde va el estilo</p>
+  <pre><code>&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Mi página&lt;/title&gt;
+  &lt;style&gt;
+    /* aquí van tus estilos */
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+</div>
+
+<h2>Cómo se escribe una regla CSS</h2>
+<p>Una regla CSS tiene tres partes: el <strong>selector</strong> (a qué etiqueta afecta) y, entre llaves, una o varias <strong>propiedades</strong> con su <strong>valor</strong>.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Ejemplo comentado</p>
+  <pre><code>h1 {
+  color: darkblue;
+  text-align: center;
+}</code></pre>
+  <ul>
+    <li><code>h1</code> → el <strong>selector</strong>: esta regla afecta a todos los <code>&lt;h1&gt;</code>.</li>
+    <li><code>color: darkblue;</code> → una <strong>propiedad</strong> (color del texto) y su <strong>valor</strong>.</li>
+    <li>Cada propiedad termina en <strong>punto y coma</strong> <code>;</code>.</li>
+  </ul>
+</div>
+
+<h2>Las propiedades que más vas a usar</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Propiedad</th><th>Para qué sirve</th><th>Ejemplo de valor</th></tr></thead>
+  <tbody>
+    <tr><td><code>color</code></td><td>Color del texto</td><td><code>red</code>, <code>#453f93</code></td></tr>
+    <tr><td><code>background-color</code></td><td>Color de fondo</td><td><code>#f5f3fc</code></td></tr>
+    <tr><td><code>font-family</code></td><td>Tipo de letra</td><td><code>Arial, sans-serif</code></td></tr>
+    <tr><td><code>font-size</code></td><td>Tamaño de letra</td><td><code>20px</code></td></tr>
+    <tr><td><code>text-align</code></td><td>Alineación del texto</td><td><code>center</code>, <code>left</code></td></tr>
+    <tr><td><code>margin</code></td><td>Espacio por fuera</td><td><code>20px</code></td></tr>
+    <tr><td><code>padding</code></td><td>Espacio por dentro</td><td><code>10px</code></td></tr>
+  </tbody>
+</table>
+
+<div class="bloque bloque-formula">
+  <p class="bloque-titulo">Los colores en CSS</p>
+  <p>Puedes escribir el color de dos formas: por su <strong>nombre en inglés</strong> (<code>red</code>, <code>blue</code>, <code>green</code>, <code>orange</code>…) o por su <strong>código hexadecimal</strong>, que empieza por <code>#</code> y son 6 cifras (<code>#ff0000</code> es rojo). Con el código puedes usar cualquier color, no solo los que tienen nombre.</p>
+</div>
+
+<h2>Un ejemplo completo para copiar</h2>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Página con estilo (cópiala y cambia los valores)</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Mi página con estilo&lt;/title&gt;
+  &lt;style&gt;
+    body { background-color: #f0f4ff; font-family: Arial, sans-serif; }
+    h1   { color: #3b3a7a; text-align: center; }
+    p    { color: #333333; font-size: 18px; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Mi página con estilo&lt;/h1&gt;
+  &lt;p&gt;¡Ahora sí tiene buena pinta!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S5 · Dando estilo a mi página</p>
+  <p>Añade una etiqueta <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code> de tu página y, como mínimo:</p>
+  <ol>
+    <li>Un <strong>color de fondo</strong> para el <code>body</code>.</li>
+    <li>Un <strong>tipo de letra</strong> para toda la página (<code>font-family</code>).</li>
+    <li>Un <strong>color</strong> distinto para los <code>h1</code> y para los <code>p</code>.</li>
+    <li>Alinear algún título al centro (<code>text-align: center;</code>).</li>
+  </ol>
+  <p>Entrega el archivo <code>.html</code> en Google Classroom.</p>
+  <div class="bloque bloque-dua">
+    <p class="bloque-titulo">Ampliación (opcional)</p>
+    <p>Prueba a poner el CSS en un <strong>archivo aparte</strong> llamado <code>estilos.css</code> y enlázalo desde el <code>&lt;head&gt;</code> con:<br>
+    <code>&lt;link rel="stylesheet" href="estilos.css"&gt;</code><br>
+    Así separas del todo el contenido (HTML) de la apariencia (CSS), como hacen las webs profesionales. <em>(Si usas el editor online, quédate mejor con el <code>&lt;style&gt;</code> interno para entregar un único archivo.)</em></p>
+  </div>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-web02-06</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>S6 · Animación web</pageName>
+  <odeNavStructureOrder>6</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S6 · Animación web</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S6 · Animación web</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-06</odePageId>
+      <odeBlockId>block-web02-06</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-06</odePageId>
+          <odeBlockId>block-web02-06</odeBlockId>
+          <odeIdeviceId>idev-web02-06</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">¡Que se mueva!</p>
+  <p>Una animación hace tu página más viva y llamativa. Hay varias formas de conseguir movimiento en la web; vamos a ver las principales y luego harás la tuya con CSS.</p>
+</div>
+
+<h2>Tipos de animación en la web</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Tipo</th><th>Qué es</th></tr></thead>
+  <tbody>
+    <tr><td><strong>GIF animado</strong></td><td>Una imagen que se mueve sola (como los memes). Se inserta con <code>&lt;img&gt;</code>, igual que una foto.</td></tr>
+    <tr><td><strong>SVG animado</strong></td><td>Un dibujo hecho con código que puede moverse. Más avanzado.</td></tr>
+    <tr><td><strong>Transición CSS</strong></td><td>Un cambio suave (por ejemplo, al pasar el ratón por encima). Es la más fácil y la que vamos a usar.</td></tr>
+    <tr><td><strong>Animación CSS</strong></td><td>Un movimiento que se repite solo, sin tocar nada. Un poco más avanzada.</td></tr>
+  </tbody>
+</table>
+
+<h2>Mínimo común: una transición al pasar el ratón</h2>
+<p>Con dos líneas de CSS puedes hacer que algo cambie <strong>suavemente</strong> cuando el ratón pasa por encima. La palabra clave <code>:hover</code> significa «cuando el ratón está encima».</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Un título que crece y cambia de color (cópialo)</p>
+  <pre><code>&lt;style&gt;
+  h1 {
+    color: #3b3a7a;
+    transition: all 0.4s;   /* el cambio dura 0,4 segundos */
+  }
+  h1:hover {
+    color: orange;
+    font-size: 45px;        /* al pasar el ratón, se agranda */
+  }
+&lt;/style&gt;</code></pre>
+  <p>Pon el ratón encima del <code>&lt;h1&gt;</code> y verás cómo cambia poco a poco. La clave es la propiedad <code>transition</code>: sin ella, el cambio sería brusco.</p>
+</div>
+
+<h2>Extensión: una animación que se mueve sola</h2>
+<p>Con <code>@keyframes</code> defines un movimiento y con <code>animation</code> se lo aplicas a un elemento. Se repite solo, sin tocar nada.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Un título que «late» (cópialo)</p>
+  <pre><code>&lt;style&gt;
+  @keyframes latido {
+    0%   { transform: scale(1);   }
+    50%  { transform: scale(1.2); }  /* a la mitad, más grande */
+    100% { transform: scale(1);   }
+  }
+  h1 {
+    animation: latido 1.5s infinite;  /* se repite sin parar */
+  }
+&lt;/style&gt;</code></pre>
+</div>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Consejo de buen gusto</p>
+  <p>Una animación llama la atención… si no hay veinte a la vez. Con <strong>una o dos</strong> bien elegidas tu página gana mucho. Si son demasiadas, marea.</p>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S6 · Mi página se mueve</p>
+  <p>Incorpora a tu página <strong>al menos una animación</strong>. Puedes elegir:</p>
+  <ul>
+    <li><strong>Mínimo:</strong> una <strong>transición</strong> con <code>:hover</code> (por ejemplo, un título o una imagen que cambie de color o tamaño al pasar el ratón).</li>
+    <li><strong>Extensión:</strong> una <strong>animación</strong> con <code>@keyframes</code> que se mueva sola, o un <strong>GIF animado</strong> con licencia libre.</li>
+  </ul>
+  <p>Esta tarea ya forma parte de tu <strong>página personal final</strong>. Entrega el archivo <code>.html</code> en Google Classroom.</p>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-web02-07</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>S7 · Mi página final</pageName>
+  <odeNavStructureOrder>7</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S7 · Mi página final</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>S7 · Mi página final</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-07</odePageId>
+      <odeBlockId>block-web02-07</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-07</odePageId>
+          <odeBlockId>block-web02-07</odeBlockId>
+          <odeIdeviceId>idev-web02-07</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">La recta final</p>
+  <p>Ha llegado el momento de <strong>juntarlo todo</strong> en una única página personal, revisarla con calma y entregarla. En esta sesión no se aprende nada nuevo: se monta, se pule y se presenta.</p>
+</div>
+
+<h2>¿Qué tiene que tener tu página?</h2>
+<p>Tu página personal, sobre el tema que elegiste, debe reunir todo lo aprendido:</p>
+<ul>
+  <li><strong>Estructura</strong> HTML correcta: <code>&lt;!DOCTYPE&gt;</code>, <code>&lt;head&gt;</code> con <code>&lt;title&gt;</code> y <code>&lt;meta charset&gt;</code>, y <code>&lt;body&gt;</code>.</li>
+  <li><strong>Contenido</strong>: títulos, párrafos, al menos una lista y al menos un enlace (con <code>target="_blank" rel="noopener"</code>).</li>
+  <li>Al menos una <strong>imagen con licencia libre</strong> y su <strong>atribución</strong>.</li>
+  <li><strong>Estilo</strong> CSS: color de fondo, tipo de letra y colores propios.</li>
+  <li>Al menos una <strong>animación</strong> (transición <code>:hover</code> o animación <code>@keyframes</code>).</li>
+  <li>Al menos <strong>3 comentarios</strong> que expliquen, con tus palabras, qué hace cada parte que elijas.</li>
+</ul>
+
+<h2>Explica tu código con comentarios</h2>
+<p>Un <strong>comentario</strong> es una nota dentro del código que el navegador <em>no muestra</em>: sirve para explicar qué hace cada parte. Escribir tus propios comentarios demuestra que entiendes lo que has hecho.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Así se escribe un comentario en HTML</p>
+  <pre><code>&lt;!-- Este título cambia de color al pasar el ratón --&gt;
+&lt;h1&gt;Mi rincón&lt;/h1&gt;</code></pre>
+  <p>Añade al menos <strong>3 comentarios</strong> repartidos por tu página, explicando <em>con tus palabras</em> qué hace cada trozo (por ejemplo: la animación, la imagen y su licencia, o el estilo del fondo).</p>
+</div>
+
+<h2>Una plantilla para no empezar de cero</h2>
+<p>Si quieres, parte de esta plantilla, que ya tiene todas las piezas. Solo tienes que cambiar los textos, la imagen y los colores por los tuyos. Tienes también este archivo listo para abrir en <em>Materiales → ejemplos de código → plantilla de página personal</em>.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Plantilla de página personal (punto de partida)</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Mi rincón: (tu tema)&lt;/title&gt;
+  &lt;style&gt;
+    body { background-color: #f0f4ff; font-family: Arial, sans-serif; margin: 20px; }
+    h1   { color: #3b3a7a; text-align: center; transition: all 0.4s; }
+    h1:hover { color: orange; }
+    p    { color: #333333; font-size: 18px; }
+    img  { width: 320px; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Título principal de mi página --&gt;
+  &lt;h1&gt;Mi rincón: (tu tema)&lt;/h1&gt;
+  &lt;p&gt;Hola, me llamo (tu nombre) y esta página trata sobre…&lt;/p&gt;
+
+  &lt;h2&gt;Lo que más me gusta&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Primera cosa&lt;/li&gt;
+    &lt;li&gt;Segunda cosa&lt;/li&gt;
+    &lt;li&gt;Tercera cosa&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;img src="URL_DE_TU_IMAGEN" alt="Describe aquí tu imagen"&gt;
+  &lt;p&gt;«Título» de Autor, licencia CC BY,
+     &lt;a href="URL_ORIGINAL" target="_blank" rel="noopener"&gt;ver original&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;h2&gt;Enlaces que recomiendo&lt;/h2&gt;
+  &lt;p&gt;&lt;a href="https://es.wikipedia.org" target="_blank" rel="noopener"&gt;Más información&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S7 · Mi página final</p>
+  <ol>
+    <li><strong>Monta</strong> tu página personal reuniendo todo lo de las sesiones anteriores.</li>
+    <li>Añade tus <strong>3 comentarios</strong> explicativos.</li>
+    <li><strong>Repásala</strong> con la checklist de la página siguiente. No entregues hasta que todo esté marcado.</li>
+    <li><strong>Entrega</strong> el archivo <code>.html</code> en Google Classroom.</li>
+  </ol>
+</div>
+
+<h2>La presentación: enseña y demuestra</h2>
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Cómo será tu presentación (1-2 minutos)</p>
+  <p>Enseñarás tu página a la clase y contarás de qué trata y qué es lo que más te gusta de cómo ha quedado. Además, para demostrar que la controlas, te pediré que <strong>hagas un pequeño cambio en directo</strong> sobre tu propio código. Por ejemplo:</p>
+  <ul>
+    <li>«Cámbiame el color de un título ahora mismo.»</li>
+    <li>«¿Qué hace esta línea de tu código?»</li>
+    <li>«Añádeme un elemento más a tu lista.»</li>
+  </ul>
+  <p>No es un examen sorpresa: si has hecho tú la página siguiendo las sesiones, estos cambios te saldrán solos. Es tu oportunidad de lucir lo que has aprendido.</p>
+</div>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Antes de entregar, comprueba que funciona</p>
+  <p>Abre tu archivo <code>.html</code> en el navegador (o pulsa «Ejecutar» en el editor online) y mira que <strong>se ve todo</strong>: la imagen carga, los enlaces funcionan y la animación se mueve. Un archivo que no abre no se puede evaluar.</p>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-web02-08</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>Chuleta de HTML y CSS</pageName>
+  <odeNavStructureOrder>8</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Chuleta de HTML y CSS</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Chuleta de HTML y CSS</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-08</odePageId>
+      <odeBlockId>block-web02-08</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-08</odePageId>
+          <odeBlockId>block-web02-08</odeBlockId>
+          <odeIdeviceId>idev-web02-08</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Tu chuleta de HTML y CSS</p>
+  <p>Todas las etiquetas y propiedades que has usado en esta unidad, reunidas en un sitio para consultarlas rápido mientras trabajas.</p>
+</div>
+
+<h2>Etiquetas HTML</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Etiqueta</th><th>Para qué sirve</th></tr></thead>
+  <tbody>
+    <tr><td><code>&lt;!DOCTYPE html&gt;</code></td><td>Primera línea. Indica que es una página HTML.</td></tr>
+    <tr><td><code>&lt;html&gt; … &lt;/html&gt;</code></td><td>Envuelve toda la página.</td></tr>
+    <tr><td><code>&lt;head&gt; … &lt;/head&gt;</code></td><td>Información que no se ve (ficha técnica).</td></tr>
+    <tr><td><code>&lt;meta charset="utf-8"&gt;</code></td><td>Para que se vean bien tildes y ñ.</td></tr>
+    <tr><td><code>&lt;title&gt; … &lt;/title&gt;</code></td><td>Título de la pestaña del navegador.</td></tr>
+    <tr><td><code>&lt;body&gt; … &lt;/body&gt;</code></td><td>Todo lo que se ve en la página.</td></tr>
+    <tr><td><code>&lt;h1&gt;</code> … <code>&lt;h6&gt;</code></td><td>Títulos, de más grande (h1) a más pequeño (h6).</td></tr>
+    <tr><td><code>&lt;p&gt; … &lt;/p&gt;</code></td><td>Párrafo de texto.</td></tr>
+    <tr><td><code>&lt;strong&gt;</code> / <code>&lt;em&gt;</code></td><td>Negrita / cursiva.</td></tr>
+    <tr><td><code>&lt;br&gt;</code></td><td>Salto de línea (no se cierra).</td></tr>
+    <tr><td><code>&lt;hr&gt;</code></td><td>Línea horizontal de separación (no se cierra).</td></tr>
+    <tr><td><code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code> / <code>&lt;li&gt;</code></td><td>Lista con puntos / numerada / cada elemento de la lista.</td></tr>
+    <tr><td><code>&lt;a href="..."&gt;</code></td><td>Enlace. Añade <code>target="_blank" rel="noopener"</code> para abrir en pestaña nueva.</td></tr>
+    <tr><td><code>&lt;img src="..." alt="..."&gt;</code></td><td>Imagen (no se cierra). <code>alt</code> = descripción.</td></tr>
+    <tr><td><code>&lt;style&gt; … &lt;/style&gt;</code></td><td>Dentro del <code>&lt;head&gt;</code>: aquí va el CSS.</td></tr>
+  </tbody>
+</table>
+
+<h2>Propiedades CSS</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Propiedad</th><th>Para qué sirve</th><th>Ejemplo</th></tr></thead>
+  <tbody>
+    <tr><td><code>color</code></td><td>Color del texto</td><td><code>color: red;</code></td></tr>
+    <tr><td><code>background-color</code></td><td>Color de fondo</td><td><code>background-color: #f0f4ff;</code></td></tr>
+    <tr><td><code>font-family</code></td><td>Tipo de letra</td><td><code>font-family: Arial, sans-serif;</code></td></tr>
+    <tr><td><code>font-size</code></td><td>Tamaño de letra</td><td><code>font-size: 20px;</code></td></tr>
+    <tr><td><code>text-align</code></td><td>Alineación del texto</td><td><code>text-align: center;</code></td></tr>
+    <tr><td><code>margin</code> / <code>padding</code></td><td>Espacio por fuera / por dentro</td><td><code>margin: 20px;</code></td></tr>
+    <tr><td><code>width</code></td><td>Ancho (p. ej. de una imagen)</td><td><code>width: 320px;</code></td></tr>
+    <tr><td><code>transition</code></td><td>Cambio suave</td><td><code>transition: all 0.4s;</code></td></tr>
+    <tr><td><code>:hover</code></td><td>«Cuando el ratón está encima»</td><td><code>h1:hover { color: orange; }</code></td></tr>
+    <tr><td><code>@keyframes</code> + <code>animation</code></td><td>Animación que se repite sola</td><td><code>animation: latido 1.5s infinite;</code></td></tr>
+  </tbody>
+</table>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Recuerda</p>
+  <p>En CSS, cada propiedad termina en <strong>punto y coma</strong> <code>;</code> y el bloque va entre <strong>llaves</strong> <code>{ }</code>. En HTML, casi todas las etiquetas se <strong>abren y se cierran</strong> (menos <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;img&gt;</code> y <code>&lt;meta&gt;</code>).</p>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-web02-09</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>Checklist de entrega</pageName>
+  <odeNavStructureOrder>9</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Checklist de entrega</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Checklist de entrega</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-web02-09</odePageId>
+      <odeBlockId>block-web02-09</odeBlockId>
+      <blockName></blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>0</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-web02-09</odePageId>
+          <odeBlockId>block-web02-09</odeBlockId>
+          <odeIdeviceId>idev-web02-09</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Checklist de entrega</p>
+  <p>Antes de entregar tu página final en Google Classroom, comprueba <strong>uno por uno</strong> estos puntos. No entregues hasta que puedas marcarlos todos.</p>
+</div>
+
+<h2>1 · Estructura</h2>
+<ul>
+  <li>La página empieza por <code>&lt;!DOCTYPE html&gt;</code>.</li>
+  <li>Tiene <code>&lt;head&gt;</code> con <code>&lt;meta charset="utf-8"&gt;</code> y un <code>&lt;title&gt;</code> con sentido.</li>
+  <li>Todo el contenido visible está dentro de <code>&lt;body&gt;</code>.</li>
+  <li>Las etiquetas se abren y se cierran bien.</li>
+</ul>
+
+<h2>2 · Contenido</h2>
+<ul>
+  <li>Hay al menos un <code>&lt;h1&gt;</code> y algún <code>&lt;h2&gt;</code>.</li>
+  <li>Hay varios párrafos que explican mi tema.</li>
+  <li>Hay al menos una lista (<code>&lt;ul&gt;</code> u <code>&lt;ol&gt;</code>).</li>
+  <li>Hay al menos un enlace con <code>target="_blank" rel="noopener"</code> que funciona.</li>
+</ul>
+
+<h2>3 · Imágenes y licencias</h2>
+<ul>
+  <li>Hay al menos una imagen y se ve (no aparece rota).</li>
+  <li>La imagen tiene <code>alt</code> con una descripción.</li>
+  <li>La imagen es de un banco libre (Openverse, Pixabay…).</li>
+  <li>Está <strong>atribuida</strong>: título, autor, licencia y enlace al original.</li>
+</ul>
+
+<h2>4 · Estilo (CSS)</h2>
+<ul>
+  <li>Hay una etiqueta <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code>.</li>
+  <li>He cambiado el color de fondo y el tipo de letra.</li>
+  <li>Los títulos y los párrafos tienen colores propios.</li>
+</ul>
+
+<h2>5 · Animación</h2>
+<ul>
+  <li>Hay al menos una animación (transición <code>:hover</code>, animación <code>@keyframes</code> o GIF libre).</li>
+  <li>Se ve funcionar al abrir la página.</li>
+</ul>
+
+<h2>6 · Lo entiendo y sé defenderlo</h2>
+<ul>
+  <li>He puesto al menos <strong>3 comentarios</strong> <code>&lt;!-- ... --&gt;</code> explicando, con mis palabras, qué hace cada parte.</li>
+  <li>Sé <strong>modificar mi página en directo</strong>: cambiar un color, añadir un elemento a una lista o explicar qué hace una línea.</li>
+</ul>
+
+<h2>7 · Funcionamiento y entrega</h2>
+<ul>
+  <li>He abierto el archivo en el navegador y <strong>todo se ve bien</strong>.</li>
+  <li>El archivo termina en <code>.html</code>.</li>
+  <li>Lo he subido a la tarea de <strong>Google Classroom</strong>.</li>
+  <li>Tengo preparada mi <strong>presentación breve</strong> para la clase.</li>
+</ul>
+
+<div class="bloque bloque-formula">
+  <p class="bloque-titulo">Qué se valora</p>
+  <p>Esta unidad evalúa que sepas <strong>construir</strong> una página (estructura y contenido), <strong>darle estilo y movimiento</strong> (CSS y animación) y <strong>usar imágenes con licencia</strong> atribuyéndolas correctamente. Los comentarios y el cambio en directo demuestran que lo has hecho <strong>tú</strong> y que lo entiendes.</p>
+</div>
+]]></htmlView>
+          <jsonProperties></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+</odeNavStructures>
+</ode>

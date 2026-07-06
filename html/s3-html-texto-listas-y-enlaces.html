@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-web02-03">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S3 · HTML: texto, listas y enlaces | Desarrollo Web</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Unidad de iniciación al desarrollo web (HTML, CSS y animación) para 2.º de ESO. SdA «Tu rincón en la red».">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-web02-03" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Desarrollo Web · Inicio</a>
+</li>
+<li> <a href="../html/s1-como-funciona-la-web.html" class="no-ch">S1 · ¿Cómo funciona la web?</a>
+</li>
+<li> <a href="../html/s2-la-estructura-de-una-pagina.html" class="no-ch">S2 · La estructura de una página</a>
+</li>
+<li class="active"> <a href="../html/s3-html-texto-listas-y-enlaces.html" class="active no-ch">S3 · HTML: texto, listas y enlaces</a>
+</li>
+<li> <a href="../html/s4-imagenes-con-licencia.html" class="no-ch">S4 · Imágenes con licencia</a>
+</li>
+<li> <a href="../html/s5-css-dando-estilo.html" class="no-ch">S5 · CSS: dando estilo</a>
+</li>
+<li> <a href="../html/s6-animacion-web.html" class="no-ch">S6 · Animación web</a>
+</li>
+<li> <a href="../html/s7-mi-pagina-final.html" class="no-ch">S7 · Mi página final</a>
+</li>
+<li> <a href="../html/chuleta-de-html-y-css.html" class="no-ch">Chuleta de HTML y CSS</a>
+</li>
+<li> <a href="../html/checklist-de-entrega.html" class="no-ch">Checklist de entrega</a>
+</li>
+</ul>
+</nav><main id="page-web02-03" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">4</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">10</strong></span></p>
+
+<div class="package-header"><p class="package-title">Desarrollo Web</p></div>
+<div class="page-header"><h1 class="page-title">S3 · HTML: texto, listas y enlaces</h1></div>
+</header><div id="page-content-page-web02-03" class="page-content">
+<article id="block-web02-03" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idev-web02-03" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idev-web02-03&quot;}">
+
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Dar forma al contenido</p>
+  <p>Ya tienes el esqueleto. Ahora vas a rellenar el <code>&lt;body&gt;</code> con contenido de verdad: <strong>títulos, párrafos, listas y enlaces</strong>. Estas son las etiquetas que más vas a usar.</p>
+</div>
+
+<h2>Títulos y párrafos</h2>
+<p>Hay seis niveles de título, de <code>&lt;h1&gt;</code> (el más grande e importante) a <code>&lt;h6&gt;</code>. Los párrafos van en <code>&lt;p&gt;</code>.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Ejemplo (cópialo y pruébalo)</p>
+  <pre><code>&lt;h1&gt;Mis videojuegos favoritos&lt;/h1&gt;
+&lt;h2&gt;Juegos de aventuras&lt;/h2&gt;
+&lt;p&gt;Estos son los que más me gustan por su historia.&lt;/p&gt;</code></pre>
+</div>
+
+<h2>Poner el texto en negrita o cursiva</h2>
+<p>Dentro de un párrafo puedes resaltar palabras:</p>
+<div class="bloque bloque-resuelto">
+  <pre><code>&lt;p&gt;Mi juego favorito es &lt;strong&gt;muy divertido&lt;/strong&gt;
+y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
+  <ul>
+    <li><code>&lt;strong&gt;</code> → <strong>negrita</strong> (algo importante).</li>
+    <li><code>&lt;em&gt;</code> → <em>cursiva</em> (algo con énfasis).</li>
+  </ul>
+</div>
+
+<h2>Listas</h2>
+<p>Hay dos tipos de lista. Cada elemento va dentro de una etiqueta <code>&lt;li&gt;</code>.</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Lista desordenada (con puntos) y ordenada (con números)</p>
+  <pre><code>&lt;ul&gt;
+  &lt;li&gt;Fresas&lt;/li&gt;
+  &lt;li&gt;Plátanos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Encender el ordenador&lt;/li&gt;
+  &lt;li&gt;Abrir el navegador&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+  <ul>
+    <li><code>&lt;ul&gt;</code> → lista <strong>sin orden</strong> (aparece con puntos).</li>
+    <li><code>&lt;ol&gt;</code> → lista <strong>ordenada</strong> (aparece con números).</li>
+  </ul>
+</div>
+
+<h2>Enlaces</h2>
+<p>Los enlaces son lo que convierte la web en «la web»: te llevan de una página a otra. Se hacen con la etiqueta <code>&lt;a&gt;</code> y su atributo <code>href</code> (la dirección de destino).</p>
+<div class="bloque bloque-resuelto">
+  <p class="bloque-titulo">Un enlace que abre en una pestaña nueva</p>
+  <pre><code>&lt;a href=&quot;https://es.wikipedia.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Ir a la Wikipedia&lt;/a&gt;</code></pre>
+  <ul>
+    <li><code>href="..."</code> → la dirección a la que lleva el enlace.</li>
+    <li><code>target="_blank"</code> → abre el enlace en una <strong>pestaña nueva</strong>, sin cerrar tu página.</li>
+    <li><code>rel="noopener"</code> → acompaña siempre a <code>target="_blank"</code>: es una medida de seguridad.</li>
+  </ul>
+</div>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Línea de separación y salto de línea</p>
+  <p>Dos etiquetas útiles que <strong>no se cierran</strong>: <code>&lt;hr&gt;</code> dibuja una línea horizontal para separar secciones, y <code>&lt;br&gt;</code> hace un salto de línea dentro de un párrafo.</p>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S3 · Mi página con contenido</p>
+  <p>Partiendo de tu página de la S2, añade dentro del <code>&lt;body&gt;</code>:</p>
+  <ol>
+    <li>Un título <code>&lt;h1&gt;</code> con el tema de tu página y, al menos, un <code>&lt;h2&gt;</code> de subtítulo.</li>
+    <li>Dos <strong>párrafos</strong> que expliquen tu tema, con alguna palabra en <code>&lt;strong&gt;</code> o <code>&lt;em&gt;</code>.</li>
+    <li>Una <strong>lista</strong> (ordenada o desordenada) con al menos 3 elementos.</li>
+    <li>Un <strong>enlace</strong> a una página relacionada con tu tema, que abra en pestaña nueva (<code>target="_blank" rel="noopener"</code>).</li>
+  </ol>
+  <p>Entrega el archivo <code>.html</code> en Google Classroom.</p>
+  <div class="bloque bloque-dua">
+    <p class="bloque-titulo">Ampliación (opcional)</p>
+    <p>Haz una <strong>lista dentro de otra lista</strong> (por ejemplo, «juegos» y, dentro de cada juego, sus personajes). Usa también una línea <code>&lt;hr&gt;</code> para separar dos secciones.</p>
+  </div>
+</div>
+
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/s2-la-estructura-de-una-pagina.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/s4-imagenes-con-licencia.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class=""> <p> <span class="license-label">Licencia: </span><span class="license">creative commons: attribution - share alike</span></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
