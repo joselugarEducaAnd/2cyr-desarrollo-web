@@ -52,7 +52,7 @@
   </odeProperty>
   <odeProperty>
     <key>pp_modified</key>
-    <value>1783347117017</value>
+    <value>1783351673554</value>
   </odeProperty>
   <odeProperty>
     <key>pp_addExeLink</key>
@@ -169,7 +169,7 @@
 <ul>
   <li>Una <strong>estructura</strong> correcta en HTML (títulos, párrafos, listas, enlaces).</li>
   <li>Al menos una <strong>imagen con licencia libre</strong>, correctamente atribuida.</li>
-  <li>Un <strong>estilo</strong> propio con CSS (colores, tipos de letra, disposición).</li>
+  <li>Un <strong>estilo</strong> propio con CSS (colores, fuentes, disposición).</li>
   <li>Al menos una <strong>animación</strong> web.</li>
 </ul>
 <p>La entregarás en <strong>Google Classroom</strong> y la enseñarás en una presentación breve a la clase.</p>
@@ -206,12 +206,31 @@
 
 <div class="bloque bloque-nota">
   <p class="bloque-titulo">Opción B · Editor «Pluma» del aula</p>
-  <p>En los ordenadores Linux del centro tienes el editor de texto <strong>Pluma</strong>. Escribe el código, guarda el archivo con el menú <em>Archivo → Guardar</em> y ponle un nombre que termine en <code>.html</code> (por ejemplo <code>mi-pagina.html</code>). Luego haz doble clic en el archivo para abrirlo en el navegador y ver cómo queda. Cada vez que cambies el código, guarda y pulsa <strong>F5</strong> en el navegador para actualizar.</p>
+  <p>En los ordenadores Linux del centro tienes el editor de texto <strong>Pluma</strong>. Escribe el código, guarda el archivo con el menú <em>Archivo → Guardar</em> y ponle un nombre que termine en <code>.html</code>. Luego haz doble clic en el archivo para abrirlo en el navegador y ver cómo queda. Cada vez que cambies el código, guarda y pulsa <strong>F5</strong> en el navegador para actualizar.</p>
 </div>
 
+<h2>Cómo entregar tu trabajo</h2>
 <div class="bloque bloque-actividad">
-  <p class="bloque-titulo">Cómo entregar tu trabajo</p>
+  <p class="bloque-titulo">Todo se entrega en Google Classroom</p>
   <p>Todas las tareas de esta unidad se entregan en <strong>Google Classroom</strong>, en la tarea que te indique el profesor. Salvo que se diga otra cosa, subirás el archivo <code>.html</code> que hayas creado (o el que te descargues del editor online).</p>
+</div>
+
+<div class="bloque bloque-formula">
+  <p class="bloque-titulo">Cómo nombrar tus archivos (¡muy importante!)</p>
+  <p>Para no perder ni mezclar ningún trabajo, en cada sesión <strong>guardas tu archivo con un nombre fijo</strong>: el mismo para toda la clase. <strong>No pongas tu nombre ni tus apellidos</strong> en el nombre del archivo: Google Classroom ya sabe que la entrega es tuya.</p>
+  <table class="tabla-datos">
+    <thead><tr><th>Sesión</th><th>Nombra tu archivo así (exactamente)</th></tr></thead>
+    <tbody>
+      <tr><td>S1</td><td>No creas archivo: respondes en el documento de la tarea de Classroom.</td></tr>
+      <tr><td>S2</td><td><code>s2.html</code></td></tr>
+      <tr><td>S3</td><td><code>s3.html</code></td></tr>
+      <tr><td>S4</td><td><code>s4.html</code></td></tr>
+      <tr><td>S5</td><td><code>s5.html</code></td></tr>
+      <tr><td>S6</td><td><code>s6.html</code></td></tr>
+      <tr><td>S7</td><td><code>pagina.html</code> (tu página final)</td></tr>
+    </tbody>
+  </table>
+  <p>Reglas para escribirlo bien: todo en <strong>minúsculas</strong>, <strong>sin espacios</strong> y <strong>sin tildes ni ñ</strong>. Escribe el nombre <em>tal cual</em> aparece en la tabla. En cada sesión te lo recordaré.</p>
 </div>
 ]]></htmlView>
           <jsonProperties></jsonProperties>
@@ -308,32 +327,75 @@
           <htmlView><![CDATA[
 <div class="bloque bloque-teoria">
   <p class="bloque-titulo">¿Qué pasa cuando escribes una dirección?</p>
-  <p>Cuando escribes una dirección como <code>www.wikipedia.org</code> en el navegador y pulsas Intro, ocurre algo parecido a pedir un libro en una biblioteca enorme: tu ordenador <strong>pide</strong> la página y otro ordenador, muy lejos, se la <strong>envía</strong>.</p>
+  <p>Cuando escribes una dirección como <code>www.wikipedia.org</code> y pulsas Intro, ocurre algo parecido a pedir un libro en una biblioteca enorme: tu ordenador <strong>pide</strong> la página y otro ordenador, muy lejos, se la <strong>envía</strong>.</p>
 </div>
 
 <h2>Los dos protagonistas: navegador y servidor</h2>
+<figure>
+<svg viewBox="0 0 620 240" role="img" aria-label="El navegador pide la página al servidor y el servidor se la envía" xmlns="http://www.w3.org/2000/svg">
+  <title>Cómo viaja una página web</title>
+  <!-- Navegador -->
+  <rect x="35" y="70" width="185" height="115" rx="10" fill="#eef4fb" stroke="#2f6fb0" stroke-width="2.5"/>
+  <rect x="35" y="70" width="185" height="26" rx="10" fill="#2f6fb0"/>
+  <circle cx="52" cy="83" r="4" fill="#fff"/><circle cx="66" cy="83" r="4" fill="#fff"/><circle cx="80" cy="83" r="4" fill="#fff"/>
+  <rect x="55" y="112" width="145" height="16" rx="8" fill="#fff" stroke="#9db8d6"/>
+  <rect x="55" y="140" width="110" height="9" rx="4" fill="#cfe0f2"/>
+  <rect x="55" y="156" width="130" height="9" rx="4" fill="#cfe0f2"/>
+  <text x="127" y="212" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="#1b4d7e">Tu navegador</text>
+  <!-- Servidor -->
+  <rect x="400" y="62" width="175" height="128" rx="10" fill="#f5f3fc" stroke="#453f93" stroke-width="2.5"/>
+  <rect x="418" y="80" width="139" height="24" rx="5" fill="#fff" stroke="#b7aee0"/>
+  <rect x="418" y="112" width="139" height="24" rx="5" fill="#fff" stroke="#b7aee0"/>
+  <rect x="418" y="144" width="139" height="24" rx="5" fill="#fff" stroke="#b7aee0"/>
+  <circle cx="432" cy="92" r="4" fill="#2a7d4f"/><circle cx="432" cy="124" r="4" fill="#2a7d4f"/><circle cx="432" cy="156" r="4" fill="#2a7d4f"/>
+  <text x="487" y="212" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="#3a2f6b">Servidor web</text>
+  <!-- Flecha 1: pido -->
+  <line x1="228" y1="100" x2="388" y2="100" stroke="#2f6fb0" stroke-width="3"/>
+  <polygon points="388,100 375,93 375,107" fill="#2f6fb0"/>
+  <text x="308" y="90" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#1b4d7e">1. Pido la página</text>
+  <!-- Flecha 2: envia -->
+  <line x1="388" y1="150" x2="228" y2="150" stroke="#e67e22" stroke-width="3"/>
+  <polygon points="228,150 241,143 241,157" fill="#e67e22"/>
+  <text x="308" y="170" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8a4f12">2. Me envía la página</text>
+</svg>
+<figcaption>El navegador pide la página; el servidor se la envía. Esa conversación usa las reglas <strong>HTTP</strong>.</figcaption>
+</figure>
+
 <p>Para que veas una página web hacen falta dos ordenadores trabajando juntos:</p>
 <ul>
   <li>El <strong>navegador</strong> (Firefox, Chrome…) es el programa de <em>tu</em> ordenador. Pide las páginas y las muestra en pantalla.</li>
-  <li>El <strong>servidor web</strong> es un ordenador especial que está encendido siempre (24 horas, todos los días) y guarda las páginas. Cuando el navegador se las pide, se las manda.</li>
+  <li>El <strong>servidor web</strong> es un ordenador especial que está encendido siempre y guarda las páginas. Cuando el navegador se las pide, se las manda.</li>
 </ul>
-<p>Esa conversación entre navegador y servidor sigue unas reglas llamadas <strong>HTTP</strong> (o <strong>HTTPS</strong>, la versión segura). Por eso las direcciones empiezan por <code>https://</code>.</p>
+<p>Esas reglas para pedir y enviar páginas se llaman <strong>HTTP</strong> (o <strong>HTTPS</strong>, la versión segura). Por eso las direcciones empiezan por <code>https://</code>.</p>
 
 <div class="bloque bloque-nota">
-  <p class="bloque-titulo">¿Por qué un servidor y no el ordenador de quien creó la web?</p>
-  <p>Porque a una página famosa la visitan miles de personas a la vez. Un servidor está preparado para atender muchísimas peticiones sin apagarse. Las webs muy visitadas usan además <em>varios</em> servidores que se reparten el trabajo.</p>
+  <p class="bloque-titulo">¿Por qué un servidor y no un ordenador cualquiera?</p>
+  <p>Porque a una página famosa la visitan miles de personas a la vez. Un servidor está preparado para atender muchísimas peticiones sin apagarse.</p>
 </div>
 
 <h2>Las partes de una dirección (URL)</h2>
-<p>Cada página tiene su propia dirección, llamada <strong>URL</strong>. Fíjate en sus partes con este ejemplo:</p>
-<div class="bloque bloque-resuelto">
-  <p class="bloque-titulo">Ejemplo: https://es.wikipedia.org/wiki/Internet</p>
-  <ul>
-    <li><code>https</code> → el <strong>protocolo</strong>: las reglas para pedir la página.</li>
-    <li><code>es.wikipedia.org</code> → el <strong>dominio</strong>: el nombre del sitio donde está guardada.</li>
-    <li><code>/wiki/Internet</code> → la <strong>ruta</strong>: la página concreta dentro de ese sitio.</li>
-  </ul>
-</div>
+<figure>
+<svg viewBox="0 0 640 170" role="img" aria-label="Partes de una URL: protocolo, dominio y ruta" xmlns="http://www.w3.org/2000/svg">
+  <title>Partes de una URL</title>
+  <rect x="40" y="28" width="120" height="46" rx="8" fill="#e9ecf5" stroke="#3b3a7a" stroke-width="2"/>
+  <rect x="160" y="28" width="245" height="46" fill="#dfe9f7" stroke="#2f6fb0" stroke-width="2"/>
+  <rect x="405" y="28" width="195" height="46" rx="8" fill="#faeede" stroke="#e67e22" stroke-width="2"/>
+  <text x="100" y="57" text-anchor="middle" font-family="monospace" font-size="16" fill="#24262e">https://</text>
+  <text x="282" y="57" text-anchor="middle" font-family="monospace" font-size="16" fill="#24262e">es.wikipedia.org</text>
+  <text x="502" y="57" text-anchor="middle" font-family="monospace" font-size="16" fill="#24262e">/wiki/Internet</text>
+  <!-- líneas hacia etiquetas -->
+  <line x1="100" y1="80" x2="100" y2="104" stroke="#3b3a7a" stroke-width="2"/>
+  <line x1="282" y1="80" x2="282" y2="104" stroke="#2f6fb0" stroke-width="2"/>
+  <line x1="502" y1="80" x2="502" y2="104" stroke="#e67e22" stroke-width="2"/>
+  <text x="100" y="124" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#3b3a7a">protocolo</text>
+  <text x="282" y="124" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#1b4d7e">dominio</text>
+  <text x="502" y="124" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#8a4f12">ruta</text>
+  <text x="100" y="144" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a5f6b">las reglas</text>
+  <text x="282" y="144" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a5f6b">el sitio</text>
+  <text x="502" y="144" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a5f6b">la página concreta</text>
+</svg>
+<figcaption>Cada dirección tiene tres partes: <strong>protocolo</strong>, <strong>dominio</strong> y <strong>ruta</strong>.</figcaption>
+</figure>
 
 <h2>Mira una página por dentro</h2>
 <p>Todas las páginas están escritas con un lenguaje llamado <strong>HTML</strong> (lo aprenderás en la próxima sesión). Puedes verlo tú mismo:</p>
@@ -345,17 +407,16 @@
     <li>Elige <strong>«Inspeccionar»</strong> (o pulsa la tecla <strong>F12</strong>).</li>
     <li>Se abrirá un panel con el <strong>código HTML</strong> de la página. Pasa el ratón por encima de las líneas y verás cómo se iluminan las partes de la página.</li>
   </ol>
-  <p>No te asustes por la cantidad de código: ¡todas las webs se construyen con las mismas piezas que vas a aprender aquí!</p>
 </div>
 
 <div class="bloque bloque-actividad">
   <p class="bloque-titulo">Tarea S1 · Cómo funciona la web</p>
-  <p>Responde en el documento de la tarea de Google Classroom:</p>
+  <p><strong>En esta sesión no creas ningún archivo.</strong> Responde directamente en el documento que encontrarás dentro de la tarea de Google Classroom:</p>
   <ol>
     <li>¿Qué diferencia hay entre un <strong>navegador</strong> y un <strong>servidor</strong> web?</li>
-    <li>¿Por qué las páginas se guardan en servidores y no en el ordenador de casa de quien las crea?</li>
+    <li>¿Por qué las páginas se guardan en servidores?</li>
     <li>Copia la URL de una página que uses mucho e identifica sus partes: <em>protocolo</em>, <em>dominio</em> y <em>ruta</em>.</li>
-    <li><strong>Inspecciona</strong> una página real (clic derecho → Inspeccionar). Haz una captura del panel de código y pégala en tu documento. Escribe una frase con lo que te haya llamado la atención.</li>
+    <li><strong>Inspecciona</strong> una página real (clic derecho → Inspeccionar). Haz una captura del panel de código y pégala en el documento. Escribe una frase con lo que te haya llamado la atención.</li>
   </ol>
   <div class="bloque bloque-dua">
     <p class="bloque-titulo">Ampliación (opcional)</p>
@@ -457,29 +518,65 @@
           <htmlView><![CDATA[
 <div class="bloque bloque-teoria">
   <p class="bloque-titulo">Los tres lenguajes de la web</p>
-  <p>Una página web se construye combinando <strong>tres lenguajes</strong>, y cada uno tiene un trabajo distinto. Piensa en construir una casa:</p>
-  <ul>
-    <li><strong>HTML</strong> → la <em>estructura</em> (las paredes, las habitaciones): pone el contenido y lo organiza en títulos, párrafos, listas, imágenes…</li>
-    <li><strong>CSS</strong> → el <em>estilo</em> (la pintura, la decoración): colores, tipos de letra, tamaños, dónde va cada cosa.</li>
-    <li><strong>JavaScript</strong> → el <em>comportamiento</em> (los mecanismos): hace la página interactiva (botones que reaccionan, juegos…).</li>
-  </ul>
-  <p>En esta unidad trabajaremos sobre todo con <strong>HTML</strong> y <strong>CSS</strong>.</p>
+  <p>Una página web se construye combinando <strong>tres lenguajes</strong>, y cada uno tiene un trabajo distinto. Piénsalo como construir una casa:</p>
 </div>
+
+<figure>
+<svg viewBox="0 0 640 230" role="img" aria-label="Los tres lenguajes de la web: HTML estructura, CSS estilo, JavaScript comportamiento" xmlns="http://www.w3.org/2000/svg">
+  <title>HTML, CSS y JavaScript</title>
+  <!-- Card HTML -->
+  <rect x="20" y="20" width="185" height="190" rx="12" fill="#f5f3fc" stroke="#453f93" stroke-width="2.5"/>
+  <polygon points="112,55 70,90 154,90" fill="none" stroke="#453f93" stroke-width="3"/>
+  <rect x="80" y="90" width="64" height="45" fill="none" stroke="#453f93" stroke-width="3"/>
+  <text x="112" y="165" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#3a2f6b">HTML</text>
+  <text x="112" y="190" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#3a2f6b">la estructura</text>
+  <!-- Card CSS -->
+  <rect x="227" y="20" width="185" height="190" rx="12" fill="#fef6ec" stroke="#e67e22" stroke-width="2.5"/>
+  <rect x="300" y="52" width="40" height="14" rx="3" fill="#e67e22" transform="rotate(45 320 59)"/>
+  <rect x="330" y="82" width="18" height="30" rx="3" fill="#e67e22" transform="rotate(45 339 97)"/>
+  <rect x="285" y="120" width="60" height="12" rx="6" fill="#e67e22"/>
+  <text x="319" y="165" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#8a4f12">CSS</text>
+  <text x="319" y="190" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8a4f12">el estilo</text>
+  <!-- Card JS -->
+  <rect x="434" y="20" width="185" height="190" rx="12" fill="#eef8f1" stroke="#2a7d4f" stroke-width="2.5"/>
+  <polygon points="532,50 512,100 528,100 520,140 552,85 534,85" fill="#2a7d4f"/>
+  <text x="526" y="165" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="800" fill="#1d5636">JavaScript</text>
+  <text x="526" y="190" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#1d5636">el comportamiento</text>
+</svg>
+<figcaption><strong>HTML</strong> pone las paredes, <strong>CSS</strong> las pinta y decora, y <strong>JavaScript</strong> hace que las cosas se muevan. En esta unidad trabajaremos con <strong>HTML</strong> y <strong>CSS</strong>.</figcaption>
+</figure>
 
 <h2>¿Qué es una etiqueta HTML?</h2>
 <p>HTML organiza el contenido con <strong>etiquetas</strong>. Una etiqueta es una palabra entre los símbolos <code>&lt;</code> y <code>&gt;</code>. Casi todas van <strong>por parejas</strong>: una de apertura y otra de cierre (la de cierre lleva una barra <code>/</code>).</p>
-<div class="bloque bloque-resuelto">
-  <p class="bloque-titulo">Anatomía de un elemento</p>
-  <pre><code>&lt;p&gt;Esto es un párrafo.&lt;/p&gt;</code></pre>
-  <ul>
-    <li><code>&lt;p&gt;</code> → etiqueta de <strong>apertura</strong> (aquí empieza el párrafo).</li>
-    <li><code>Esto es un párrafo.</code> → el <strong>contenido</strong>.</li>
-    <li><code>&lt;/p&gt;</code> → etiqueta de <strong>cierre</strong> (aquí termina).</li>
-  </ul>
-</div>
 
 <h2>La estructura mínima de una página</h2>
-<p>Toda página web parte del mismo <strong>esqueleto</strong>. Cópialo tal cual: será el punto de partida de todo lo que hagas.</p>
+<p>Toda página web parte del mismo <strong>esqueleto</strong>. Fíjate en cómo unas etiquetas van <em>dentro</em> de otras, como cajas dentro de cajas:</p>
+
+<figure>
+<svg viewBox="0 0 460 300" role="img" aria-label="La etiqueta html contiene head y body; head contiene meta y title; body contiene h1 y p" xmlns="http://www.w3.org/2000/svg">
+  <title>Estructura anidada de una página HTML</title>
+  <rect x="10" y="10" width="440" height="280" rx="10" fill="#f5f3fc" stroke="#453f93" stroke-width="2.5"/>
+  <text x="24" y="32" font-family="monospace" font-size="15" font-weight="700" fill="#3a2f6b">&lt;html&gt;</text>
+  <!-- head -->
+  <rect x="30" y="45" width="400" height="95" rx="8" fill="#eef4fb" stroke="#2f6fb0" stroke-width="2"/>
+  <text x="44" y="66" font-family="monospace" font-size="14" font-weight="700" fill="#1b4d7e">&lt;head&gt;  (no se ve en la página)</text>
+  <rect x="52" y="78" width="360" height="24" rx="5" fill="#fff" stroke="#9db8d6"/>
+  <text x="64" y="95" font-family="monospace" font-size="13" fill="#24262e">&lt;meta charset="utf-8"&gt;  → tildes y ñ</text>
+  <rect x="52" y="108" width="360" height="24" rx="5" fill="#fff" stroke="#9db8d6"/>
+  <text x="64" y="125" font-family="monospace" font-size="13" fill="#24262e">&lt;title&gt;  → título de la pestaña</text>
+  <!-- body -->
+  <rect x="30" y="150" width="400" height="120" rx="8" fill="#eef8f1" stroke="#2a7d4f" stroke-width="2"/>
+  <text x="44" y="171" font-family="monospace" font-size="14" font-weight="700" fill="#1d5636">&lt;body&gt;  (¡esto SÍ se ve!)</text>
+  <rect x="52" y="183" width="360" height="24" rx="5" fill="#fff" stroke="#9fd3b4"/>
+  <text x="64" y="200" font-family="monospace" font-size="13" fill="#24262e">&lt;h1&gt;  → un título grande</text>
+  <rect x="52" y="213" width="360" height="24" rx="5" fill="#fff" stroke="#9fd3b4"/>
+  <text x="64" y="230" font-family="monospace" font-size="13" fill="#24262e">&lt;p&gt;  → un párrafo</text>
+  <text x="392" y="262" font-family="monospace" font-size="13" fill="#1d5636">&lt;/body&gt;</text>
+</svg>
+<figcaption>El <code>&lt;head&gt;</code> es la «ficha técnica» (no se ve); el <code>&lt;body&gt;</code> es todo lo que se ve en la página.</figcaption>
+</figure>
+
+<p>Cópiala tal cual: será el punto de partida de todo lo que hagas.</p>
 <div class="bloque bloque-resuelto">
   <p class="bloque-titulo">Plantilla mínima (cópiala)</p>
   <pre><code>&lt;!DOCTYPE html&gt;
@@ -495,22 +592,9 @@
 &lt;/html&gt;</code></pre>
 </div>
 
-<p>¿Qué es cada parte?</p>
-<table class="tabla-datos">
-  <thead><tr><th>Parte</th><th>Para qué sirve</th></tr></thead>
-  <tbody>
-    <tr><td><code>&lt;!DOCTYPE html&gt;</code></td><td>Le dice al navegador que es una página HTML moderna. Va siempre la primera.</td></tr>
-    <tr><td><code>&lt;html&gt;</code></td><td>Envuelve <em>toda</em> la página. El atributo <code>lang="es"</code> indica que está en español.</td></tr>
-    <tr><td><code>&lt;head&gt;</code></td><td>La «ficha técnica»: información que <em>no</em> se ve en la página.</td></tr>
-    <tr><td><code>&lt;meta charset="utf-8"&gt;</code></td><td>Permite que se vean bien las tildes y la ñ. ¡Muy importante en español!</td></tr>
-    <tr><td><code>&lt;title&gt;</code></td><td>El título que aparece en la pestaña del navegador.</td></tr>
-    <tr><td><code>&lt;body&gt;</code></td><td>El «cuerpo»: aquí va <strong>todo lo que se ve</strong> en la página.</td></tr>
-  </tbody>
-</table>
-
 <div class="bloque bloque-nota">
   <p class="bloque-titulo">Regla de oro: abrir y cerrar en orden</p>
-  <p>Las etiquetas deben cerrarse en el orden inverso al que se abren, como cajas dentro de cajas. Fíjate en la sangría (los espacios): ayudan a ver qué va dentro de qué.</p>
+  <p>Las etiquetas deben cerrarse en el orden inverso al que se abren, como cajas dentro de cajas. Fíjate en la sangría (los espacios): ayuda a ver qué va dentro de qué.</p>
 </div>
 
 <div class="bloque bloque-actividad">
@@ -519,8 +603,9 @@
     <li>Abre el editor (HTML Code Runner o Pluma) y <strong>copia la plantilla mínima</strong> de arriba.</li>
     <li>Cambia el <code>&lt;title&gt;</code> por el título de tu página (por ejemplo, «La web de Marta»).</li>
     <li>Cambia el texto del <code>&lt;h1&gt;</code> y del <code>&lt;p&gt;</code> para presentarte y decir de qué tratará tu página.</li>
-    <li>Comprueba cómo queda (Ejecutar, o guardar y F5) y <strong>entrega el archivo <code>.html</code></strong> en Google Classroom.</li>
+    <li>Guarda tu archivo con el nombre <code>s2.html</code> y <strong>súbelo a Google Classroom</strong>.</li>
   </ol>
+  <p><strong>Nombre del archivo:</strong> <code>s2.html</code></p>
   <div class="bloque bloque-dua">
     <p class="bloque-titulo">Ampliación (opcional)</p>
     <p>Añade un segundo párrafo y un segundo título con la etiqueta <code>&lt;h2&gt;</code>. ¿Qué diferencia notas entre <code>&lt;h1&gt;</code> y <code>&lt;h2&gt;</code>?</p>
@@ -634,7 +719,6 @@
 </div>
 
 <h2>Poner el texto en negrita o cursiva</h2>
-<p>Dentro de un párrafo puedes resaltar palabras:</p>
 <div class="bloque bloque-resuelto">
   <pre><code>&lt;p&gt;Mi juego favorito es &lt;strong&gt;muy divertido&lt;/strong&gt;
 y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
@@ -647,7 +731,7 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
 <h2>Listas</h2>
 <p>Hay dos tipos de lista. Cada elemento va dentro de una etiqueta <code>&lt;li&gt;</code>.</p>
 <div class="bloque bloque-resuelto">
-  <p class="bloque-titulo">Lista desordenada (con puntos) y ordenada (con números)</p>
+  <p class="bloque-titulo">Lista con puntos (ul) y numerada (ol)</p>
   <pre><code>&lt;ul&gt;
   &lt;li&gt;Fresas&lt;/li&gt;
   &lt;li&gt;Plátanos&lt;/li&gt;
@@ -657,20 +741,31 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
   &lt;li&gt;Encender el ordenador&lt;/li&gt;
   &lt;li&gt;Abrir el navegador&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-  <ul>
-    <li><code>&lt;ul&gt;</code> → lista <strong>sin orden</strong> (aparece con puntos).</li>
-    <li><code>&lt;ol&gt;</code> → lista <strong>ordenada</strong> (aparece con números).</li>
-  </ul>
 </div>
 
 <h2>Enlaces</h2>
-<p>Los enlaces son lo que convierte la web en «la web»: te llevan de una página a otra. Se hacen con la etiqueta <code>&lt;a&gt;</code> y su atributo <code>href</code> (la dirección de destino).</p>
+<p>Los enlaces son lo que convierte la web en «la web»: te llevan de una página a otra. Se hacen con la etiqueta <code>&lt;a&gt;</code>. Mira sus partes:</p>
+
+<figure>
+<svg viewBox="0 0 620 210" role="img" aria-label="Partes de un enlace: el atributo href es el destino y el texto es lo que se ve y se pulsa" xmlns="http://www.w3.org/2000/svg">
+  <title>Anatomía de un enlace</title>
+  <rect x="20" y="60" width="580" height="46" rx="8" fill="#eef4fb" stroke="#2f6fb0" stroke-width="2"/>
+  <text x="34" y="90" font-family="monospace" font-size="17" fill="#24262e">&lt;a href="<tspan fill="#8a4f12" font-weight="700">https://es.wikipedia.org</tspan>"&gt;<tspan fill="#1d5636" font-weight="700">Ir a la Wikipedia</tspan>&lt;/a&gt;</text>
+  <!-- puntero al href -->
+  <line x1="205" y1="60" x2="205" y2="34" stroke="#e67e22" stroke-width="2"/>
+  <text x="205" y="26" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#8a4f12">a dónde te lleva</text>
+  <!-- puntero al texto -->
+  <line x1="420" y1="106" x2="420" y2="150" stroke="#2a7d4f" stroke-width="2"/>
+  <text x="420" y="170" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#1d5636">lo que se ve y se pulsa</text>
+</svg>
+<figcaption>El atributo <code>href</code> dice <strong>a dónde va</strong> el enlace; el texto entre las etiquetas es <strong>lo que se ve</strong>.</figcaption>
+</figure>
+
 <div class="bloque bloque-resuelto">
   <p class="bloque-titulo">Un enlace que abre en una pestaña nueva</p>
   <pre><code>&lt;a href="https://es.wikipedia.org" target="_blank" rel="noopener"&gt;Ir a la Wikipedia&lt;/a&gt;</code></pre>
   <ul>
-    <li><code>href="..."</code> → la dirección a la que lleva el enlace.</li>
-    <li><code>target="_blank"</code> → abre el enlace en una <strong>pestaña nueva</strong>, sin cerrar tu página.</li>
+    <li><code>target="_blank"</code> → abre el enlace en una <strong>pestaña nueva</strong>.</li>
     <li><code>rel="noopener"</code> → acompaña siempre a <code>target="_blank"</code>: es una medida de seguridad.</li>
   </ul>
 </div>
@@ -685,14 +780,15 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
   <p>Partiendo de tu página de la S2, añade dentro del <code>&lt;body&gt;</code>:</p>
   <ol>
     <li>Un título <code>&lt;h1&gt;</code> con el tema de tu página y, al menos, un <code>&lt;h2&gt;</code> de subtítulo.</li>
-    <li>Dos <strong>párrafos</strong> que expliquen tu tema, con alguna palabra en <code>&lt;strong&gt;</code> o <code>&lt;em&gt;</code>.</li>
+    <li>Dos <strong>párrafos</strong>, con alguna palabra en <code>&lt;strong&gt;</code> o <code>&lt;em&gt;</code>.</li>
     <li>Una <strong>lista</strong> (ordenada o desordenada) con al menos 3 elementos.</li>
     <li>Un <strong>enlace</strong> a una página relacionada con tu tema, que abra en pestaña nueva (<code>target="_blank" rel="noopener"</code>).</li>
   </ol>
-  <p>Entrega el archivo <code>.html</code> en Google Classroom.</p>
+  <p>Guarda tu archivo con el nombre <code>s3.html</code> y súbelo a Google Classroom.</p>
+  <p><strong>Nombre del archivo:</strong> <code>s3.html</code></p>
   <div class="bloque bloque-dua">
     <p class="bloque-titulo">Ampliación (opcional)</p>
-    <p>Haz una <strong>lista dentro de otra lista</strong> (por ejemplo, «juegos» y, dentro de cada juego, sus personajes). Usa también una línea <code>&lt;hr&gt;</code> para separar dos secciones.</p>
+    <p>Haz una <strong>lista dentro de otra lista</strong> y usa una línea <code>&lt;hr&gt;</code> para separar dos secciones.</p>
   </div>
 </div>
 ]]></htmlView>
@@ -838,7 +934,8 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
     <li>Al menos <strong>una imagen</strong> relacionada con tu tema, buscada en Openverse o Pixabay, con su <code>alt</code> bien escrito.</li>
     <li>Su <strong>atribución</strong> debajo: título, autor, licencia y enlace al original.</li>
   </ol>
-  <p>Entrega el archivo <code>.html</code> en Google Classroom.</p>
+  <p>Guarda tu archivo con el nombre <code>s4.html</code> y súbelo a Google Classroom.</p>
+  <p><strong>Nombre del archivo:</strong> <code>s4.html</code></p>
   <div class="bloque bloque-nota">
     <p class="bloque-titulo">Ojo, esto se evalúa</p>
     <p>Usar imágenes libres y atribuirlas bien <strong>puntúa</strong> en esta unidad. Una imagen sin atribución cuenta como no válida.</p>
@@ -943,7 +1040,7 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
           <htmlView><![CDATA[
 <div class="bloque bloque-teoria">
   <p class="bloque-titulo">Ahora, el estilo</p>
-  <p>Tu página ya tiene contenido, pero se ve «sosa»: letras negras sobre fondo blanco. Con <strong>CSS</strong> vas a darle color, cambiar los tipos de letra y decidir cómo se coloca todo. Recuerda: HTML pone <em>qué</em> hay; CSS decide <em>cómo se ve</em>.</p>
+  <p>Tu página ya tiene contenido, pero se ve «sosa». Con <strong>CSS</strong> vas a darle color, cambiar los tipos de letra y decidir cómo se coloca todo. Recuerda: HTML pone <em>qué</em> hay; CSS decide <em>cómo se ve</em>.</p>
 </div>
 
 <h2>¿Dónde se escribe el CSS?</h2>
@@ -960,40 +1057,49 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
 </div>
 
 <h2>Cómo se escribe una regla CSS</h2>
-<p>Una regla CSS tiene tres partes: el <strong>selector</strong> (a qué etiqueta afecta) y, entre llaves, una o varias <strong>propiedades</strong> con su <strong>valor</strong>.</p>
-<div class="bloque bloque-resuelto">
-  <p class="bloque-titulo">Ejemplo comentado</p>
-  <pre><code>h1 {
-  color: darkblue;
-  text-align: center;
-}</code></pre>
-  <ul>
-    <li><code>h1</code> → el <strong>selector</strong>: esta regla afecta a todos los <code>&lt;h1&gt;</code>.</li>
-    <li><code>color: darkblue;</code> → una <strong>propiedad</strong> (color del texto) y su <strong>valor</strong>.</li>
-    <li>Cada propiedad termina en <strong>punto y coma</strong> <code>;</code>.</li>
-  </ul>
-</div>
+<p>Una regla CSS responde a tres preguntas: <strong>a qué</strong> afecta, <strong>qué</strong> cambio y <strong>cómo</strong>.</p>
+
+<figure>
+<svg viewBox="0 0 600 210" role="img" aria-label="Partes de una regla CSS: selector, propiedad y valor" xmlns="http://www.w3.org/2000/svg">
+  <title>Anatomía de una regla CSS</title>
+  <rect x="20" y="70" width="560" height="48" rx="8" fill="#f5f3fc" stroke="#3b3a7a" stroke-width="2"/>
+  <text x="40" y="102" font-family="monospace" font-size="20" fill="#24262e"><tspan fill="#3b3a7a" font-weight="700">h1</tspan> {  <tspan fill="#1b4d7e" font-weight="700">color</tspan> : <tspan fill="#8a4f12" font-weight="700">red</tspan> ; }</text>
+  <!-- selector -->
+  <line x1="52" y1="70" x2="52" y2="42" stroke="#3b3a7a" stroke-width="2"/>
+  <text x="52" y="34" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#3b3a7a">selector</text>
+  <text x="52" y="150" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a5f6b">¿a qué afecta?</text>
+  <line x1="52" y1="118" x2="52" y2="138" stroke="#3b3a7a" stroke-width="1.5"/>
+  <!-- propiedad -->
+  <line x1="165" y1="118" x2="165" y2="166" stroke="#2f6fb0" stroke-width="2"/>
+  <text x="165" y="184" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#1b4d7e">propiedad</text>
+  <text x="165" y="200" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a5f6b">¿qué cambio?</text>
+  <!-- valor -->
+  <line x1="250" y1="70" x2="250" y2="42" stroke="#e67e22" stroke-width="2"/>
+  <text x="250" y="34" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#8a4f12">valor</text>
+  <text x="250" y="150" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a5f6b">¿cómo?</text>
+  <line x1="250" y1="118" x2="250" y2="138" stroke="#e67e22" stroke-width="1.5"/>
+</svg>
+<figcaption><strong>Selector</strong> (a qué afecta) + <strong>propiedad</strong> (qué cambio) + <strong>valor</strong> (cómo). Cada propiedad termina en <code>;</code>.</figcaption>
+</figure>
 
 <h2>Las propiedades que más vas a usar</h2>
 <table class="tabla-datos">
-  <thead><tr><th>Propiedad</th><th>Para qué sirve</th><th>Ejemplo de valor</th></tr></thead>
+  <thead><tr><th>Propiedad</th><th>Para qué sirve</th><th>Ejemplo</th></tr></thead>
   <tbody>
     <tr><td><code>color</code></td><td>Color del texto</td><td><code>red</code>, <code>#453f93</code></td></tr>
     <tr><td><code>background-color</code></td><td>Color de fondo</td><td><code>#f5f3fc</code></td></tr>
     <tr><td><code>font-family</code></td><td>Tipo de letra</td><td><code>Arial, sans-serif</code></td></tr>
     <tr><td><code>font-size</code></td><td>Tamaño de letra</td><td><code>20px</code></td></tr>
-    <tr><td><code>text-align</code></td><td>Alineación del texto</td><td><code>center</code>, <code>left</code></td></tr>
-    <tr><td><code>margin</code></td><td>Espacio por fuera</td><td><code>20px</code></td></tr>
-    <tr><td><code>padding</code></td><td>Espacio por dentro</td><td><code>10px</code></td></tr>
+    <tr><td><code>text-align</code></td><td>Alineación del texto</td><td><code>center</code></td></tr>
+    <tr><td><code>margin</code> / <code>padding</code></td><td>Espacio por fuera / por dentro</td><td><code>20px</code></td></tr>
   </tbody>
 </table>
 
 <div class="bloque bloque-formula">
   <p class="bloque-titulo">Los colores en CSS</p>
-  <p>Puedes escribir el color de dos formas: por su <strong>nombre en inglés</strong> (<code>red</code>, <code>blue</code>, <code>green</code>, <code>orange</code>…) o por su <strong>código hexadecimal</strong>, que empieza por <code>#</code> y son 6 cifras (<code>#ff0000</code> es rojo). Con el código puedes usar cualquier color, no solo los que tienen nombre.</p>
+  <p>Puedes escribir el color por su <strong>nombre en inglés</strong> (<code>red</code>, <code>blue</code>, <code>green</code>…) o por su <strong>código hexadecimal</strong>, que empieza por <code>#</code> (<code>#ff0000</code> es rojo). Con el código puedes usar cualquier color.</p>
 </div>
 
-<h2>Un ejemplo completo para copiar</h2>
 <div class="bloque bloque-resuelto">
   <p class="bloque-titulo">Página con estilo (cópiala y cambia los valores)</p>
   <pre><code>&lt;!DOCTYPE html&gt;
@@ -1023,12 +1129,11 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
     <li>Un <strong>color</strong> distinto para los <code>h1</code> y para los <code>p</code>.</li>
     <li>Alinear algún título al centro (<code>text-align: center;</code>).</li>
   </ol>
-  <p>Entrega el archivo <code>.html</code> en Google Classroom.</p>
+  <p>Guarda tu archivo con el nombre <code>s5.html</code> y súbelo a Google Classroom.</p>
+  <p><strong>Nombre del archivo:</strong> <code>s5.html</code></p>
   <div class="bloque bloque-dua">
     <p class="bloque-titulo">Ampliación (opcional)</p>
-    <p>Prueba a poner el CSS en un <strong>archivo aparte</strong> llamado <code>estilos.css</code> y enlázalo desde el <code>&lt;head&gt;</code> con:<br>
-    <code>&lt;link rel="stylesheet" href="estilos.css"&gt;</code><br>
-    Así separas del todo el contenido (HTML) de la apariencia (CSS), como hacen las webs profesionales. <em>(Si usas el editor online, quédate mejor con el <code>&lt;style&gt;</code> interno para entregar un único archivo.)</em></p>
+    <p>Prueba a poner el CSS en un <strong>archivo aparte</strong> llamado <code>estilos.css</code> y enlázalo desde el <code>&lt;head&gt;</code> con <code>&lt;link rel="stylesheet" href="estilos.css"&gt;</code>. <em>(Si usas el editor online, quédate mejor con el <code>&lt;style&gt;</code> interno para entregar un único archivo.)</em></p>
   </div>
 </div>
 ]]></htmlView>
@@ -1185,7 +1290,8 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
     <li><strong>Mínimo:</strong> una <strong>transición</strong> con <code>:hover</code> (por ejemplo, un título o una imagen que cambie de color o tamaño al pasar el ratón).</li>
     <li><strong>Extensión:</strong> una <strong>animación</strong> con <code>@keyframes</code> que se mueva sola, o un <strong>GIF animado</strong> con licencia libre.</li>
   </ul>
-  <p>Esta tarea ya forma parte de tu <strong>página personal final</strong>. Entrega el archivo <code>.html</code> en Google Classroom.</p>
+  <p>Esta tarea ya forma parte de tu <strong>página personal final</strong>. Guarda tu archivo con el nombre <code>s6.html</code> y súbelo a Google Classroom.</p>
+  <p><strong>Nombre del archivo:</strong> <code>s6.html</code></p>
 </div>
 ]]></htmlView>
           <jsonProperties></jsonProperties>
@@ -1350,8 +1456,9 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
     <li><strong>Monta</strong> tu página personal reuniendo todo lo de las sesiones anteriores.</li>
     <li>Añade tus <strong>3 comentarios</strong> explicativos.</li>
     <li><strong>Repásala</strong> con la checklist de la página siguiente. No entregues hasta que todo esté marcado.</li>
-    <li><strong>Entrega</strong> el archivo <code>.html</code> en Google Classroom.</li>
+    <li><strong>Entrega</strong> tu página final con el nombre <code>pagina.html</code> en Google Classroom.</li>
   </ol>
+  <p><strong>Nombre del archivo:</strong> <code>pagina.html</code></p>
 </div>
 
 <h2>La presentación: enseña y demuestra</h2>
@@ -1655,7 +1762,7 @@ y tiene una historia &lt;em&gt;increíble&lt;/em&gt;.&lt;/p&gt;</code></pre>
 <h2>7 · Funcionamiento y entrega</h2>
 <ul>
   <li>He abierto el archivo en el navegador y <strong>todo se ve bien</strong>.</li>
-  <li>El archivo termina en <code>.html</code>.</li>
+  <li>El archivo termina en <code>.html</code> y tiene el nombre que pedía la sesión (por ejemplo, <code>pagina.html</code> en la final).</li>
   <li>Lo he subido a la tarea de <strong>Google Classroom</strong>.</li>
   <li>Tengo preparada mi <strong>presentación breve</strong> para la clase.</li>
 </ul>

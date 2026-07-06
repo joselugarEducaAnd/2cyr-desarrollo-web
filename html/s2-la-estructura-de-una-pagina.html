@@ -52,29 +52,65 @@
 
 <div class="bloque bloque-teoria">
   <p class="bloque-titulo">Los tres lenguajes de la web</p>
-  <p>Una página web se construye combinando <strong>tres lenguajes</strong>, y cada uno tiene un trabajo distinto. Piensa en construir una casa:</p>
-  <ul>
-    <li><strong>HTML</strong> → la <em>estructura</em> (las paredes, las habitaciones): pone el contenido y lo organiza en títulos, párrafos, listas, imágenes…</li>
-    <li><strong>CSS</strong> → el <em>estilo</em> (la pintura, la decoración): colores, tipos de letra, tamaños, dónde va cada cosa.</li>
-    <li><strong>JavaScript</strong> → el <em>comportamiento</em> (los mecanismos): hace la página interactiva (botones que reaccionan, juegos…).</li>
-  </ul>
-  <p>En esta unidad trabajaremos sobre todo con <strong>HTML</strong> y <strong>CSS</strong>.</p>
+  <p>Una página web se construye combinando <strong>tres lenguajes</strong>, y cada uno tiene un trabajo distinto. Piénsalo como construir una casa:</p>
 </div>
+
+<figure>
+<svg viewBox="0 0 640 230" role="img" aria-label="Los tres lenguajes de la web: HTML estructura, CSS estilo, JavaScript comportamiento" xmlns="http://www.w3.org/2000/svg">
+  <title>HTML, CSS y JavaScript</title>
+  <!-- Card HTML -->
+  <rect x="20" y="20" width="185" height="190" rx="12" fill="#f5f3fc" stroke="#453f93" stroke-width="2.5"/>
+  <polygon points="112,55 70,90 154,90" fill="none" stroke="#453f93" stroke-width="3"/>
+  <rect x="80" y="90" width="64" height="45" fill="none" stroke="#453f93" stroke-width="3"/>
+  <text x="112" y="165" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#3a2f6b">HTML</text>
+  <text x="112" y="190" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#3a2f6b">la estructura</text>
+  <!-- Card CSS -->
+  <rect x="227" y="20" width="185" height="190" rx="12" fill="#fef6ec" stroke="#e67e22" stroke-width="2.5"/>
+  <rect x="300" y="52" width="40" height="14" rx="3" fill="#e67e22" transform="rotate(45 320 59)"/>
+  <rect x="330" y="82" width="18" height="30" rx="3" fill="#e67e22" transform="rotate(45 339 97)"/>
+  <rect x="285" y="120" width="60" height="12" rx="6" fill="#e67e22"/>
+  <text x="319" y="165" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#8a4f12">CSS</text>
+  <text x="319" y="190" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8a4f12">el estilo</text>
+  <!-- Card JS -->
+  <rect x="434" y="20" width="185" height="190" rx="12" fill="#eef8f1" stroke="#2a7d4f" stroke-width="2.5"/>
+  <polygon points="532,50 512,100 528,100 520,140 552,85 534,85" fill="#2a7d4f"/>
+  <text x="526" y="165" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="800" fill="#1d5636">JavaScript</text>
+  <text x="526" y="190" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#1d5636">el comportamiento</text>
+</svg>
+<figcaption><strong>HTML</strong> pone las paredes, <strong>CSS</strong> las pinta y decora, y <strong>JavaScript</strong> hace que las cosas se muevan. En esta unidad trabajaremos con <strong>HTML</strong> y <strong>CSS</strong>.</figcaption>
+</figure>
 
 <h2>¿Qué es una etiqueta HTML?</h2>
 <p>HTML organiza el contenido con <strong>etiquetas</strong>. Una etiqueta es una palabra entre los símbolos <code>&lt;</code> y <code>&gt;</code>. Casi todas van <strong>por parejas</strong>: una de apertura y otra de cierre (la de cierre lleva una barra <code>/</code>).</p>
-<div class="bloque bloque-resuelto">
-  <p class="bloque-titulo">Anatomía de un elemento</p>
-  <pre><code>&lt;p&gt;Esto es un párrafo.&lt;/p&gt;</code></pre>
-  <ul>
-    <li><code>&lt;p&gt;</code> → etiqueta de <strong>apertura</strong> (aquí empieza el párrafo).</li>
-    <li><code>Esto es un párrafo.</code> → el <strong>contenido</strong>.</li>
-    <li><code>&lt;/p&gt;</code> → etiqueta de <strong>cierre</strong> (aquí termina).</li>
-  </ul>
-</div>
 
 <h2>La estructura mínima de una página</h2>
-<p>Toda página web parte del mismo <strong>esqueleto</strong>. Cópialo tal cual: será el punto de partida de todo lo que hagas.</p>
+<p>Toda página web parte del mismo <strong>esqueleto</strong>. Fíjate en cómo unas etiquetas van <em>dentro</em> de otras, como cajas dentro de cajas:</p>
+
+<figure>
+<svg viewBox="0 0 460 300" role="img" aria-label="La etiqueta html contiene head y body; head contiene meta y title; body contiene h1 y p" xmlns="http://www.w3.org/2000/svg">
+  <title>Estructura anidada de una página HTML</title>
+  <rect x="10" y="10" width="440" height="280" rx="10" fill="#f5f3fc" stroke="#453f93" stroke-width="2.5"/>
+  <text x="24" y="32" font-family="monospace" font-size="15" font-weight="700" fill="#3a2f6b">&lt;html&gt;</text>
+  <!-- head -->
+  <rect x="30" y="45" width="400" height="95" rx="8" fill="#eef4fb" stroke="#2f6fb0" stroke-width="2"/>
+  <text x="44" y="66" font-family="monospace" font-size="14" font-weight="700" fill="#1b4d7e">&lt;head&gt;  (no se ve en la página)</text>
+  <rect x="52" y="78" width="360" height="24" rx="5" fill="#fff" stroke="#9db8d6"/>
+  <text x="64" y="95" font-family="monospace" font-size="13" fill="#24262e">&lt;meta charset="utf-8"&gt;  → tildes y ñ</text>
+  <rect x="52" y="108" width="360" height="24" rx="5" fill="#fff" stroke="#9db8d6"/>
+  <text x="64" y="125" font-family="monospace" font-size="13" fill="#24262e">&lt;title&gt;  → título de la pestaña</text>
+  <!-- body -->
+  <rect x="30" y="150" width="400" height="120" rx="8" fill="#eef8f1" stroke="#2a7d4f" stroke-width="2"/>
+  <text x="44" y="171" font-family="monospace" font-size="14" font-weight="700" fill="#1d5636">&lt;body&gt;  (¡esto SÍ se ve!)</text>
+  <rect x="52" y="183" width="360" height="24" rx="5" fill="#fff" stroke="#9fd3b4"/>
+  <text x="64" y="200" font-family="monospace" font-size="13" fill="#24262e">&lt;h1&gt;  → un título grande</text>
+  <rect x="52" y="213" width="360" height="24" rx="5" fill="#fff" stroke="#9fd3b4"/>
+  <text x="64" y="230" font-family="monospace" font-size="13" fill="#24262e">&lt;p&gt;  → un párrafo</text>
+  <text x="392" y="262" font-family="monospace" font-size="13" fill="#1d5636">&lt;/body&gt;</text>
+</svg>
+<figcaption>El <code>&lt;head&gt;</code> es la «ficha técnica» (no se ve); el <code>&lt;body&gt;</code> es todo lo que se ve en la página.</figcaption>
+</figure>
+
+<p>Cópiala tal cual: será el punto de partida de todo lo que hagas.</p>
 <div class="bloque bloque-resuelto">
   <p class="bloque-titulo">Plantilla mínima (cópiala)</p>
   <pre><code>&lt;!DOCTYPE html&gt;
@@ -90,22 +126,9 @@
 &lt;/html&gt;</code></pre>
 </div>
 
-<p>¿Qué es cada parte?</p>
-<table class="tabla-datos">
-  <thead><tr><th>Parte</th><th>Para qué sirve</th></tr></thead>
-  <tbody>
-    <tr><td><code>&lt;!DOCTYPE html&gt;</code></td><td>Le dice al navegador que es una página HTML moderna. Va siempre la primera.</td></tr>
-    <tr><td><code>&lt;html&gt;</code></td><td>Envuelve <em>toda</em> la página. El atributo <code>lang="es"</code> indica que está en español.</td></tr>
-    <tr><td><code>&lt;head&gt;</code></td><td>La «ficha técnica»: información que <em>no</em> se ve en la página.</td></tr>
-    <tr><td><code>&lt;meta charset="utf-8"&gt;</code></td><td>Permite que se vean bien las tildes y la ñ. ¡Muy importante en español!</td></tr>
-    <tr><td><code>&lt;title&gt;</code></td><td>El título que aparece en la pestaña del navegador.</td></tr>
-    <tr><td><code>&lt;body&gt;</code></td><td>El «cuerpo»: aquí va <strong>todo lo que se ve</strong> en la página.</td></tr>
-  </tbody>
-</table>
-
 <div class="bloque bloque-nota">
   <p class="bloque-titulo">Regla de oro: abrir y cerrar en orden</p>
-  <p>Las etiquetas deben cerrarse en el orden inverso al que se abren, como cajas dentro de cajas. Fíjate en la sangría (los espacios): ayudan a ver qué va dentro de qué.</p>
+  <p>Las etiquetas deben cerrarse en el orden inverso al que se abren, como cajas dentro de cajas. Fíjate en la sangría (los espacios): ayuda a ver qué va dentro de qué.</p>
 </div>
 
 <div class="bloque bloque-actividad">
@@ -114,8 +137,9 @@
     <li>Abre el editor (HTML Code Runner o Pluma) y <strong>copia la plantilla mínima</strong> de arriba.</li>
     <li>Cambia el <code>&lt;title&gt;</code> por el título de tu página (por ejemplo, «La web de Marta»).</li>
     <li>Cambia el texto del <code>&lt;h1&gt;</code> y del <code>&lt;p&gt;</code> para presentarte y decir de qué tratará tu página.</li>
-    <li>Comprueba cómo queda (Ejecutar, o guardar y F5) y <strong>entrega el archivo <code>.html</code></strong> en Google Classroom.</li>
+    <li>Guarda tu archivo con el nombre <code>s2.html</code> y <strong>súbelo a Google Classroom</strong>.</li>
   </ol>
+  <p><strong>Nombre del archivo:</strong> <code>s2.html</code></p>
   <div class="bloque bloque-dua">
     <p class="bloque-titulo">Ampliación (opcional)</p>
     <p>Añade un segundo párrafo y un segundo título con la etiqueta <code>&lt;h2&gt;</code>. ¿Qué diferencia notas entre <code>&lt;h1&gt;</code> y <code>&lt;h2&gt;</code>?</p>

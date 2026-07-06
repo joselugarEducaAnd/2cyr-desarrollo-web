@@ -52,7 +52,7 @@
 
 <div class="bloque bloque-teoria">
   <p class="bloque-titulo">Ahora, el estilo</p>
-  <p>Tu página ya tiene contenido, pero se ve «sosa»: letras negras sobre fondo blanco. Con <strong>CSS</strong> vas a darle color, cambiar los tipos de letra y decidir cómo se coloca todo. Recuerda: HTML pone <em>qué</em> hay; CSS decide <em>cómo se ve</em>.</p>
+  <p>Tu página ya tiene contenido, pero se ve «sosa». Con <strong>CSS</strong> vas a darle color, cambiar los tipos de letra y decidir cómo se coloca todo. Recuerda: HTML pone <em>qué</em> hay; CSS decide <em>cómo se ve</em>.</p>
 </div>
 
 <h2>¿Dónde se escribe el CSS?</h2>
@@ -69,40 +69,49 @@
 </div>
 
 <h2>Cómo se escribe una regla CSS</h2>
-<p>Una regla CSS tiene tres partes: el <strong>selector</strong> (a qué etiqueta afecta) y, entre llaves, una o varias <strong>propiedades</strong> con su <strong>valor</strong>.</p>
-<div class="bloque bloque-resuelto">
-  <p class="bloque-titulo">Ejemplo comentado</p>
-  <pre><code>h1 {
-  color: darkblue;
-  text-align: center;
-}</code></pre>
-  <ul>
-    <li><code>h1</code> → el <strong>selector</strong>: esta regla afecta a todos los <code>&lt;h1&gt;</code>.</li>
-    <li><code>color: darkblue;</code> → una <strong>propiedad</strong> (color del texto) y su <strong>valor</strong>.</li>
-    <li>Cada propiedad termina en <strong>punto y coma</strong> <code>;</code>.</li>
-  </ul>
-</div>
+<p>Una regla CSS responde a tres preguntas: <strong>a qué</strong> afecta, <strong>qué</strong> cambio y <strong>cómo</strong>.</p>
+
+<figure>
+<svg viewBox="0 0 600 210" role="img" aria-label="Partes de una regla CSS: selector, propiedad y valor" xmlns="http://www.w3.org/2000/svg">
+  <title>Anatomía de una regla CSS</title>
+  <rect x="20" y="70" width="560" height="48" rx="8" fill="#f5f3fc" stroke="#3b3a7a" stroke-width="2"/>
+  <text x="40" y="102" font-family="monospace" font-size="20" fill="#24262e"><tspan fill="#3b3a7a" font-weight="700">h1</tspan> {  <tspan fill="#1b4d7e" font-weight="700">color</tspan> : <tspan fill="#8a4f12" font-weight="700">red</tspan> ; }</text>
+  <!-- selector -->
+  <line x1="52" y1="70" x2="52" y2="42" stroke="#3b3a7a" stroke-width="2"/>
+  <text x="52" y="34" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#3b3a7a">selector</text>
+  <text x="52" y="150" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a5f6b">¿a qué afecta?</text>
+  <line x1="52" y1="118" x2="52" y2="138" stroke="#3b3a7a" stroke-width="1.5"/>
+  <!-- propiedad -->
+  <line x1="165" y1="118" x2="165" y2="166" stroke="#2f6fb0" stroke-width="2"/>
+  <text x="165" y="184" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#1b4d7e">propiedad</text>
+  <text x="165" y="200" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a5f6b">¿qué cambio?</text>
+  <!-- valor -->
+  <line x1="250" y1="70" x2="250" y2="42" stroke="#e67e22" stroke-width="2"/>
+  <text x="250" y="34" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#8a4f12">valor</text>
+  <text x="250" y="150" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a5f6b">¿cómo?</text>
+  <line x1="250" y1="118" x2="250" y2="138" stroke="#e67e22" stroke-width="1.5"/>
+</svg>
+<figcaption><strong>Selector</strong> (a qué afecta) + <strong>propiedad</strong> (qué cambio) + <strong>valor</strong> (cómo). Cada propiedad termina en <code>;</code>.</figcaption>
+</figure>
 
 <h2>Las propiedades que más vas a usar</h2>
 <table class="tabla-datos">
-  <thead><tr><th>Propiedad</th><th>Para qué sirve</th><th>Ejemplo de valor</th></tr></thead>
+  <thead><tr><th>Propiedad</th><th>Para qué sirve</th><th>Ejemplo</th></tr></thead>
   <tbody>
     <tr><td><code>color</code></td><td>Color del texto</td><td><code>red</code>, <code>#453f93</code></td></tr>
     <tr><td><code>background-color</code></td><td>Color de fondo</td><td><code>#f5f3fc</code></td></tr>
     <tr><td><code>font-family</code></td><td>Tipo de letra</td><td><code>Arial, sans-serif</code></td></tr>
     <tr><td><code>font-size</code></td><td>Tamaño de letra</td><td><code>20px</code></td></tr>
-    <tr><td><code>text-align</code></td><td>Alineación del texto</td><td><code>center</code>, <code>left</code></td></tr>
-    <tr><td><code>margin</code></td><td>Espacio por fuera</td><td><code>20px</code></td></tr>
-    <tr><td><code>padding</code></td><td>Espacio por dentro</td><td><code>10px</code></td></tr>
+    <tr><td><code>text-align</code></td><td>Alineación del texto</td><td><code>center</code></td></tr>
+    <tr><td><code>margin</code> / <code>padding</code></td><td>Espacio por fuera / por dentro</td><td><code>20px</code></td></tr>
   </tbody>
 </table>
 
 <div class="bloque bloque-formula">
   <p class="bloque-titulo">Los colores en CSS</p>
-  <p>Puedes escribir el color de dos formas: por su <strong>nombre en inglés</strong> (<code>red</code>, <code>blue</code>, <code>green</code>, <code>orange</code>…) o por su <strong>código hexadecimal</strong>, que empieza por <code>#</code> y son 6 cifras (<code>#ff0000</code> es rojo). Con el código puedes usar cualquier color, no solo los que tienen nombre.</p>
+  <p>Puedes escribir el color por su <strong>nombre en inglés</strong> (<code>red</code>, <code>blue</code>, <code>green</code>…) o por su <strong>código hexadecimal</strong>, que empieza por <code>#</code> (<code>#ff0000</code> es rojo). Con el código puedes usar cualquier color.</p>
 </div>
 
-<h2>Un ejemplo completo para copiar</h2>
 <div class="bloque bloque-resuelto">
   <p class="bloque-titulo">Página con estilo (cópiala y cambia los valores)</p>
   <pre><code>&lt;!DOCTYPE html&gt;
@@ -132,12 +141,11 @@
     <li>Un <strong>color</strong> distinto para los <code>h1</code> y para los <code>p</code>.</li>
     <li>Alinear algún título al centro (<code>text-align: center;</code>).</li>
   </ol>
-  <p>Entrega el archivo <code>.html</code> en Google Classroom.</p>
+  <p>Guarda tu archivo con el nombre <code>s5.html</code> y súbelo a Google Classroom.</p>
+  <p><strong>Nombre del archivo:</strong> <code>s5.html</code></p>
   <div class="bloque bloque-dua">
     <p class="bloque-titulo">Ampliación (opcional)</p>
-    <p>Prueba a poner el CSS en un <strong>archivo aparte</strong> llamado <code>estilos.css</code> y enlázalo desde el <code>&lt;head&gt;</code> con:<br>
-    <code>&lt;link rel="stylesheet" href="estilos.css"&gt;</code><br>
-    Así separas del todo el contenido (HTML) de la apariencia (CSS), como hacen las webs profesionales. <em>(Si usas el editor online, quédate mejor con el <code>&lt;style&gt;</code> interno para entregar un único archivo.)</em></p>
+    <p>Prueba a poner el CSS en un <strong>archivo aparte</strong> llamado <code>estilos.css</code> y enlázalo desde el <code>&lt;head&gt;</code> con <code>&lt;link rel="stylesheet" href="estilos.css"&gt;</code>. <em>(Si usas el editor online, quédate mejor con el <code>&lt;style&gt;</code> interno para entregar un único archivo.)</em></p>
   </div>
 </div>
 
